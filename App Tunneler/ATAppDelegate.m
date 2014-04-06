@@ -25,7 +25,7 @@
     
     ATBrowserViewController *vc = [[ATBrowserViewController alloc] init];
     self.window.rootViewController = vc;
-    
+  
     
     AWController *controller = [AWController clientInstance];
     controller.callbackScheme = @"apptunneler";
