@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A4796328-3588-4C86-9C15-D8468F31B739</string>
+	<key>IDESourceControlProjectName</key>
+	<string>App Tunneler</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>74155662-14E0-4DE5-9410-88F3F3E6EE28</key>
+		<string>https://github.com/GTLucas/App-Tunneler.git</string>
+		<key>980A854F-8D2A-48CC-AAEA-55A955C0B912</key>
+		<string>ssh://github.com/GTLucas/AppTunneler.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>App Tunneler.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>74155662-14E0-4DE5-9410-88F3F3E6EE28</key>
+		<string>../../App Tunneler</string>
+		<key>980A854F-8D2A-48CC-AAEA-55A955C0B912</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/GTLucas/AppTunneler.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>980A854F-8D2A-48CC-AAEA-55A955C0B912</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>980A854F-8D2A-48CC-AAEA-55A955C0B912</string>
+			<key>IDESourceControlWCCName</key>
+			<string>App Tunneler</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>74155662-14E0-4DE5-9410-88F3F3E6EE28</string>
+			<key>IDESourceControlWCCName</key>
+			<string>App Tunneler</string>
+		</dict>
+	</array>
+</dict>
+</plist>
