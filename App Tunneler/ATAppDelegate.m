@@ -23,11 +23,6 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    //[self setURLFromManagedConfigs];    //Check managed configs for DS URL and set if applicable
-    
-    /*ATInitialViewController *vc = [[ATInitialViewController alloc] init];
-    self.window.rootViewController = vc;*/
-    
     ATBrowserViewController *vc = [[ATBrowserViewController alloc] init];
     self.window.rootViewController = vc;
     
