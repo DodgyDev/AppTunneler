@@ -10,7 +10,7 @@
 #import "ATProxyViewController.h"
 #import "ATGeneralSettingsViewController.h"
 #import "ATSettingsManager.h"
-#import "ATTableViewViewController.h"
+#import "ATFavoritesViewController.h"
 
 @interface ATBrowserViewController (){
     NSMutableData *webdata;
@@ -21,7 +21,7 @@
     ATProxyViewController *proxyController;
     ATGeneralSettingsViewController *generalSettingsController;
     UITableView *favoritesView;
-    ATTableViewViewController *favoritesController;
+    ATFavoritesViewController *favoritesController;
 }
 
 @end
@@ -33,28 +33,293 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _authed = NO;
-        favoritesController = [[ATTableViewViewController alloc] init];
-        // Custom initialization
+        
+        //Initializations
+        _authed = NO;   //Set auth to start as no, tracks if we've authenticated to an auth required website yet
+        favoritesController = [[ATFavoritesViewController alloc] init];
     }
     return self;
 }
+
+#pragma mark General Delegates
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view from its nib.
-    
-     proxyController = [[ATProxyViewController alloc] init];
+    proxyController = [[ATProxyViewController alloc] init];
     generalSettingsController = [[ATGeneralSettingsViewController alloc] init];
     
+    [self InitializeUI];
     [self Home];
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    originalTextFrame = Txt_Address.frame;
+    [self InitializeUIFrameSensitive];
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    _Address = Txt_Address.text;
+    _authed = NO;
+    [self LoadURL];
+    [self.view endEditing:YES];
+    return YES;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    
+    CGRect frameRect = Txt_Address.frame;
+    
+    frameRect.size.width = self.view.window.frame.origin.x + self.view.window.frame.size.width-20;
+    frameRect.origin.x = self.view.window.frame.origin.x+10;
+    
+    [Btn_Back setHidden:YES];
+    [Btn_Forward setHidden:YES];
+    [Btn_Refresh setHidden:YES];
+    Txt_Address.frame = frameRect;
+    
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    
+    [Txt_Address setFrame:originalTextFrame];
+    
+    [Btn_Back setHidden:NO];
+    [Btn_Forward setHidden:NO];
+    [Btn_Refresh setHidden:NO];
+    
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+#pragma mark Web Delegates
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
+{
+    NSLog(@"Did start loading: %@ auth:%d", [[request URL] absoluteString], _authed);
+    
+    if (!_authed) { //If not authenticated
+        _authed = NO;
+        currentConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        
+        return NO;
+    }
+    return YES;
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge;
+{
+    
+    NSLog(@"got auth challenge: %@", [challenge.protectionSpace.authenticationMethod description]);
+    
+    if(challenge.failureResponse){
+        NSLog(@"%@", [challenge failureResponse]);
+    }
+    
+    if ([challenge previousFailureCount] == 0) {
+        
+        if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]){
+            [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
+            [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
+            _authed = YES;
+        }else{
+            [challenge.sender useCredential:[self HandleCredentials:[[[[connection currentRequest] URL] host] description]] forAuthenticationChallenge:challenge];
+            _authed = YES;
+        }
+    }
+    else{
+        [[[UIAlertView alloc] initWithTitle:@"Auth Failed" message:@"Authentication Failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil] show];
+        _authed = NO;
+        [Act_Loading setHidden:YES];
+    }
+    
+}
+
+-(void)connectionDidFinishLoading:(NSURLConnection *)connection{
+    _authed = YES;
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_Address] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:60.0];
+    [WebView loadRequest:request];
+    
+}
+
+-(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
+    [[[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil] show];
+    [Act_Loading setHidden:YES];
+}
+
+- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+    NSLog(@"Presenting protect space: %@", [protectionSpace.authenticationMethod description]);
+    BOOL ret = [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust] | [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault]| [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodNTLM];
+    return ret;
+}
+
+-(BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection{
+    return YES;
+}
+
+-(void)webViewDidStartLoad:(UIWebView *)webView{
+    // webView connected
+    timer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(cancelWeb) userInfo:nil repeats:NO];
+    [Act_Loading setHidden:NO];
+}
+
+-(void)webViewDidFinishLoad:(UIWebView *)webView{
+    [timer invalidate];
+    
+    if([WebView canGoBack]){
+        [Btn_Back setEnabled:YES];
+    }else{
+        [Btn_Back setEnabled:NO];
+    }
+    
+    if([WebView canGoForward]){
+        [Btn_Forward setEnabled:YES];
+    }else{
+        [Btn_Forward setEnabled:NO];
+    }
+    
+    Txt_Address.text = WebView.request.URL.absoluteString;
+    [Act_Loading setHidden:YES];
+    
+}
+
+#pragma mark Button Events
+- (IBAction)Btn_Refresh:(id)sender {
+    [WebView reload];
+}
+
+- (IBAction)Btn_Forward:(id)sender {
+    if([WebView canGoForward]){
+        [WebView goForward];
+    }
+}
+
+- (IBAction)Btn_Home:(id)sender {
+    [self Home];
+}
+
+- (IBAction)Btn_Settings:(id)sender {
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init];
+    tabController.tabBar.layer.borderColor = [UIColor darkGrayColor].CGColor;
+    tabController.tabBar.layer.borderWidth = 2.0;
+    
+    NSArray *tabViews = @[generalSettingsController, proxyController];
+    [tabController setViewControllers:tabViews];
+    [tabController setSelectedIndex:0];
+    
+    [self presentViewController:tabController animated:YES completion:^{
+        generalSettingsController.view.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        generalSettingsController.view.layer.borderWidth = 2.0;
+        proxyController.view.layer.borderColor = [UIColor darkGrayColor].CGColor;
+        proxyController.view.layer.borderWidth = 2.0;
+    }];
+}
+
+- (IBAction)Btn_Back:(id)sender {
+    if([WebView canGoBack]){
+        [WebView goBack];
+    }
+}
+
+- (IBAction)Btn_Favorites:(id)sender {
+    
+    //If favorites menu is already open, close it.
+    if(WebView.frame.origin.x!=0){
+        self.WebView.userInteractionEnabled = YES;
+        CGRect frame = WebView.frame;
+        frame.origin.x = 0;
+        favoritesView.hidden = YES;
+        [WebView setFrame:frame];
+        Btn_Favorites.layer.backgroundColor = [UIColor whiteColor].CGColor;
+    }else{
+        self.WebView.userInteractionEnabled = NO;
+        Btn_Favorites.layer.backgroundColor = [UIColor yellowColor].CGColor;
+        favoritesView.hidden = NO;
+        CGRect frame = WebView.frame;
+        frame.origin.x+= frame.size.width*3/4;
+        [WebView setFrame:frame];
+    }
+    
+}
+
+- (IBAction)Btn_Go:(id)sender {
+    _Address = Txt_Address.text;
+    _authed = NO;
+    [self LoadURL];
+    [self.view endEditing:YES];
+}
+
+#pragma mark Web Navigation
+
+//Go home
+-(void)Home{
+    _Address = [[ATSettingsManager sharedInstance] GetHomeAddress];
+    
+    if(!_Address || [_Address isEqualToString:@""]){
+        _Address = @"http://www.google.com";
+    }
+    
+    Txt_Address.text = _Address;
+    [self LoadURL];
+}
+
+//Load URL with current address instance variable
+-(void)LoadURL{
+    
+    if(![_Address isEqualToString:@""]){
+        [Act_Loading setHidden:NO];
+        
+        NSString *formattedURL;
+        if(![[_Address lowercaseString] hasPrefix:@"http://"]&&![[_Address lowercaseString] hasPrefix:@"https://"]){
+            formattedURL = [NSString stringWithFormat:@"http://%@", _Address];
+            _Address = formattedURL;
+        }
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_Address]];
+        [WebView loadRequest:request];
+    }
+}
+
+//Load URL with address parameter, will set _address to input parameter
+-(void)LoadURLWithAddress:(NSString *)url{
+    _Address = url;
+    _authed = 0;
+    [self LoadURL];
+    if(WebView.frame.origin.x!=0){
+        CGRect frame = WebView.frame;
+        frame.origin.x = 0;
+        favoritesView.hidden = YES;
+        [WebView setFrame:frame];
+        Btn_Favorites.layer.backgroundColor = [UIColor whiteColor].CGColor;
+    }else{
+        Btn_Favorites.layer.backgroundColor = [UIColor yellowColor].CGColor;
+        favoritesView.hidden = NO;
+        CGRect frame = WebView.frame;
+        frame.origin.x+= frame.size.width*3/4;
+        [WebView setFrame:frame];
+    }
+    
+}
+
+#pragma mark Helpers
+//UI Initializations
+-(void)InitializeUI{
     
     [Btn_Back setEnabled:NO];
     [Btn_Forward setEnabled:NO];
-    
-    
     
     self.view.backgroundColor = [UIColor lightGrayColor];
     self.view.layer.borderColor = [UIColor darkGrayColor].CGColor;
@@ -115,12 +380,10 @@
     
     [Act_Loading setHidden:YES];
     [Act_Loading startAnimating];
-    
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    originalTextFrame = Txt_Address.frame;
-    
+//UI Initializations for elements that rely on frame settings, frame settings are unreliable when called during ViewDidLoad
+-(void)InitializeUIFrameSensitive{
     favoritesView = [[UITableView alloc] init];
     favoritesView.delegate = favoritesController;
     favoritesView.dataSource = favoritesController;
@@ -135,70 +398,7 @@
     favoritesView.hidden = YES;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(void)LoadURL{
-    
-    if(![_Address isEqualToString:@""]){
-        [Act_Loading setHidden:NO];
-        
-        NSString *formattedURL;
-        if(![[_Address lowercaseString] hasPrefix:@"http://"]&&![[_Address lowercaseString] hasPrefix:@"https://"]){
-            formattedURL = [NSString stringWithFormat:@"http://%@", _Address];
-            _Address = formattedURL;
-        }
-        
-        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_Address]];
-        [WebView loadRequest:request];
-    }
-}
-
-- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
-{
-    NSLog(@"Did start loading: %@ auth:%d", [[request URL] absoluteString], _authed);
-    
-    if (!_authed) { //If not authenticated
-        _authed = NO;
-        currentConnection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-        
-        return NO;
-    }
-    return YES;
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge;
-{
-    
-    
-    NSLog(@"got auth challenge: %@", [challenge.protectionSpace.authenticationMethod description]);
-    
-    if(challenge.failureResponse){
-        NSLog(@"%@", [challenge failureResponse]);
-    }
-    
-    if ([challenge previousFailureCount] == 0) {
-        
-        if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]){
-            [challenge.sender useCredential:[NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust] forAuthenticationChallenge:challenge];
-            [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
-            _authed = YES;
-        }else{
-            [challenge.sender useCredential:[self HandleCredentials:[[[[connection currentRequest] URL] host] description]] forAuthenticationChallenge:challenge];
-            _authed = YES;
-        }
-    }
-    else{
-        [[[UIAlertView alloc] initWithTitle:@"Auth Failed" message:@"Authentication Failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil] show];
-        _authed = NO;
-        [Act_Loading setHidden:YES];
-    }
-    
-}
-
+//Helper method for throwing up credentials during 401 auth challenge
 -(NSURLCredential*)HandleCredentials:(NSString*)url{
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Authentication Required" message:url delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Ok", nil];
     alert.alertViewStyle = UIAlertViewStyleLoginAndPasswordInput;
@@ -209,198 +409,16 @@
         d = [[NSDate alloc] init];
         [rl runUntilDate:d];
     }
-   
+    
     NSString *username = [[alert textFieldAtIndex:0] text];
     NSString *password = [[alert textFieldAtIndex:1] text];
     
     return [NSURLCredential credentialWithUser:username password:password persistence:NSURLCredentialPersistenceForSession];
 }
 
--(void)connectionDidFinishLoading:(NSURLConnection *)connection{
-    _authed = YES;
-    
-NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_Address] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:60.0];
-    
-    //[WebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_Address]]];
-    [WebView loadRequest:request];
-    
-}
-
--(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
-    [[[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil] show];
-    [Act_Loading setHidden:YES];
-}
-
-- (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
-    NSLog(@"Presenting protect space: %@", [protectionSpace.authenticationMethod description]);
-    BOOL ret = [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust] | [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault]| [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodNTLM];
-    return ret;
-}
-
--(BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection{
-    return YES;
-}
-
-- (IBAction)Btn_Settings:(id)sender {
-    
-    UITabBarController *tabController = [[UITabBarController alloc] init];
-    tabController.tabBar.layer.borderColor = [UIColor darkGrayColor].CGColor;
-    tabController.tabBar.layer.borderWidth = 2.0;
-    
-    NSArray *tabViews = @[generalSettingsController, proxyController];
-    [tabController setViewControllers:tabViews];
-    [tabController setSelectedIndex:0];
-    
-    [self presentViewController:tabController animated:YES completion:^{
-        generalSettingsController.view.layer.borderColor = [UIColor darkGrayColor].CGColor;
-        generalSettingsController.view.layer.borderWidth = 2.0;
-        proxyController.view.layer.borderColor = [UIColor darkGrayColor].CGColor;
-        proxyController.view.layer.borderWidth = 2.0;
-    }];
-}
-
-
-- (IBAction)Btn_Back:(id)sender {
-    if([WebView canGoBack]){
-        [WebView goBack];
-    }
-}
-
-- (IBAction)Btn_Favorites:(id)sender {
-    
-    NSLog(@"%@",[[favoritesView delegate] description]);
-    
-    if(WebView.frame.origin.x!=0){
-        CGRect frame = WebView.frame;
-        frame.origin.x = 0;
-        favoritesView.hidden = YES;
-        [WebView setFrame:frame];
-        Btn_Favorites.layer.backgroundColor = [UIColor whiteColor].CGColor;
-    }else{
-        Btn_Favorites.layer.backgroundColor = [UIColor yellowColor].CGColor;
-        favoritesView.hidden = NO;
-        CGRect frame = WebView.frame;
-        frame.origin.x+= frame.size.width*3/4;
-        [WebView setFrame:frame];
-    }
-
-}
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.view endEditing:YES];
-}
-
-- (IBAction)Btn_Go:(id)sender {
-    _Address = Txt_Address.text;
-    _authed = NO;
-    [self LoadURL];
-    [self.view endEditing:YES];
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField{
-    _Address = Txt_Address.text;
-    _authed = NO;
-    [self LoadURL];
-    [self.view endEditing:YES];
-    return YES;
-}
-
--(void)textFieldDidBeginEditing:(UITextField *)textField{
-    
-    CGRect frameRect = Txt_Address.frame;
-    
-    frameRect.size.width = self.view.window.frame.origin.x + self.view.window.frame.size.width-20;
-    frameRect.origin.x = self.view.window.frame.origin.x+10;
-    
-    [Btn_Back setHidden:YES];
-    [Btn_Forward setHidden:YES];
-    [Btn_Refresh setHidden:YES];
-    Txt_Address.frame = frameRect;
-    
-}
-
-
--(void)textFieldDidEndEditing:(UITextField *)textField{
-    
-    [Txt_Address setFrame:originalTextFrame];
-    
-    [Btn_Back setHidden:NO];
-    [Btn_Forward setHidden:NO];
-    [Btn_Refresh setHidden:NO];
-    
-}
-
--(void)webViewDidStartLoad:(UIWebView *)webView{
-    // webView connected
-    timer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(cancelWeb) userInfo:nil repeats:NO];
-    [Act_Loading setHidden:NO];
-}
-
--(void)webViewDidFinishLoad:(UIWebView *)webView{
-    [timer invalidate];
-    
-    if([WebView canGoBack]){
-        [Btn_Back setEnabled:YES];
-    }else{
-        [Btn_Back setEnabled:NO];
-    }
-    
-    if([WebView canGoForward]){
-        [Btn_Forward setEnabled:YES];
-    }else{
-        [Btn_Forward setEnabled:NO];
-    }
-    
-    Txt_Address.text = WebView.request.URL.absoluteString;
-    [Act_Loading setHidden:YES];
-    
-}
-
+//Called when request times out
 -(void)cancelWeb{
-    NSLog(@"TIMEOUT");
-}
-- (IBAction)Btn_Refresh:(id)sender {
-    [WebView reload];
+    //TODO: Needs to handle timeouts
 }
 
-- (IBAction)Btn_Forward:(id)sender {
-    if([WebView canGoForward]){
-        [WebView goForward];
-    }
-}
-
-- (IBAction)Btn_Home:(id)sender {
-    [self Home];
-}
-
--(void)Home{
-    _Address = [[ATSettingsManager sharedInstance] GetHomeAddress];
-    
-    if(!_Address || [_Address isEqualToString:@""]){
-        _Address = @"http://www.google.com";
-    }
-    
-    Txt_Address.text = _Address;
-    [self LoadURL];
-}
-
--(void)LoadURLWithAddress:(NSString *)url{
-    _Address = url;
-    _authed = 0;
-    [self LoadURL];
-    if(WebView.frame.origin.x!=0){
-        CGRect frame = WebView.frame;
-        frame.origin.x = 0;
-        favoritesView.hidden = YES;
-        [WebView setFrame:frame];
-        Btn_Favorites.layer.backgroundColor = [UIColor whiteColor].CGColor;
-    }else{
-        Btn_Favorites.layer.backgroundColor = [UIColor yellowColor].CGColor;
-        favoritesView.hidden = NO;
-        CGRect frame = WebView.frame;
-        frame.origin.x+= frame.size.width*3/4;
-        [WebView setFrame:frame];
-    }
-    
-}
 @end

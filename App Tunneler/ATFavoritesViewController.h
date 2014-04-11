@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ATBrowserViewController.h"
 
-@interface ATTableViewViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ATFavoritesViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) ATBrowserViewController *browser;
 @end

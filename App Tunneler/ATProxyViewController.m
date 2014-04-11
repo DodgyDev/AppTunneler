@@ -11,6 +11,7 @@
 #import <AWSDK/AWCommandManager.h>
 #import "ATSettingsManager.h"
 #import "ATBrowserViewController.h"
+#import <AWSDK/AWLog.h>
 
 @interface ATProxyViewController (){
     NSNumber *_httpPort;
@@ -89,16 +90,24 @@
         [self UpdateProxySettings];
     }*/
     
+    AWLogError(@"Did Open Proxy Settings");
+    
     if(![[ATSettingsManager sharedInstance] GetSDKStatus]){
         [[[UIAlertView alloc] initWithTitle:@"SDK Not Enabled" message:@"SDK must be enabled under General for proxy to function." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+    }else{
+        [self UpdateProxySettings];
     }
+    
+    
     
     
 }
 
 -(void)UpdateProxySettings{
+    [[AWCommandManager sharedManager] loadCommands];
     AWProfile *profile = [[AWCommandManager sharedManager] sdkProfile];
     AWProxyPayload *proxyPayload = [profile proxyPayload];
+
     
     if(profile && proxyPayload && [proxyPayload redirectTraffic]){
         _host = [proxyPayload hostName];
@@ -106,8 +115,8 @@
         _httpsPort = [proxyPayload httpsPort];
         
         Txt_host.text = _host;
-        Txt_httpPort.text = [_httpPort stringValue];
-        Txt_httpsPort.text = [_httpsPort stringValue];
+        Txt_httpPort.text = [NSString stringWithFormat:@"%@", _httpPort];
+        Txt_httpsPort.text = [NSString stringWithFormat:@"%@", _httpsPort];
     }else{
         [[[UIAlertView alloc] initWithTitle:@"No Proxy Settings" message:@"No Proxy Settings Detected." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
     }

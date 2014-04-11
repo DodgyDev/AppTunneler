@@ -10,9 +10,12 @@
 #import <AWSDK/AWServer.h>
 #import <AWSDK/AWProfile.h>
 #import "ATSettingsManager.h"
+#import "ATLockViewController.h"
 
 
-@implementation ATAppDelegate
+@implementation ATAppDelegate{
+    ATLockViewController *lockVC;
+}
 
 #pragma mark App Delegate
 
@@ -23,59 +26,43 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    //[self setURLFromManagedConfigs];    //Check managed configs for DS URL and set if applicable
-    
-    /*ATInitialViewController *vc = [[ATInitialViewController alloc] init];
-    self.window.rootViewController = vc;*/
-    
     ATBrowserViewController *vc = [[ATBrowserViewController alloc] init];
+    
+    
     self.window.rootViewController = vc;
     
+    lockVC = [[ATLockViewController alloc] init];
+  
+    [self setURLFromManagedConfigs];
+    
+    [AWLog sharedInstance].outputDestinationMask = AWLogOutputDestinationDeviceConsole | AWLogOutputDestinationLogFile;
     
     AWController *controller = [AWController clientInstance];
     controller.callbackScheme = @"apptunneler";
     controller.delegate = self;
     
+    
+    
     return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     if([[ATSettingsManager sharedInstance] GetSDKStatus]){
         [[AWController clientInstance] start];
     }
-    
-    
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [[AWController clientInstance] handleOpenURL:url fromApplication:sourceApplication];
 }
 
 #pragma mark AWSDK Delegate
 
 -(void)initialCheckDoneWithError:(NSError *)error{
     if(!error){
-        [[[UIAlertView alloc] initWithTitle:@"Initialized" message:@"Initialization Successful" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
+        NSLog(@"Initialization Successful");
     }else{
         NSString *message = [error localizedDescription];
         [[[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
@@ -83,27 +70,40 @@
 }
 
 -(void)receivedProfiles:(NSArray *)profiles{
-    
+    NSLog(@"%@", [[[profiles lastObject] toDictionary] description]);
 }
 
 -(void)lock{
     
+    NSLog(@"Lock Called");
+    if([AWController clientInstance].ssoStatus == AWSSOStatusEnabled){
+        
+        [self.window.rootViewController presentViewController:lockVC animated:YES completion:^{
+            
+        }];
+    }
 }
 
 -(void)unlock{
-    
-}
+    if([AWController clientInstance].ssoStatus == AWSSOStatusEnabled){
+        [lockVC dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+
+    }
+   }
 
 -(void)wipe{
     
 }
 
 -(void)resumeNetworkActivity{
-    
+    NSLog(@"Resuming network activity.");
 }
 
 -(void)stopNetworkActivity{
-    
+    NSLog(@"Disabling network activity.");
+
 }
 
 #pragma mark Helper Methods

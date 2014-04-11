@@ -10,8 +10,6 @@
 	<string>App Tunneler</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>74155662-14E0-4DE5-9410-88F3F3E6EE28</key>
-		<string>https://github.com/GTLucas/App-Tunneler.git</string>
 		<key>980A854F-8D2A-48CC-AAEA-55A955C0B912</key>
 		<string>ssh://github.com/GTLucas/AppTunneler.git</string>
 	</dict>
@@ -19,13 +17,11 @@
 	<string>App Tunneler.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>74155662-14E0-4DE5-9410-88F3F3E6EE28</key>
-		<string>../../App Tunneler</string>
 		<key>980A854F-8D2A-48CC-AAEA-55A955C0B912</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/GTLucas/AppTunneler.git</string>
+	<string>file:///Users/Lucas/Desktop/AirWatch/Development/iOS/Projects/AppTunneler/App%20Tunneler.xcodeproj/project.xcworkspace/</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -37,14 +33,6 @@
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>980A854F-8D2A-48CC-AAEA-55A955C0B912</string>
-			<key>IDESourceControlWCCName</key>
-			<string>App Tunneler</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>74155662-14E0-4DE5-9410-88F3F3E6EE28</string>
 			<key>IDESourceControlWCCName</key>
 			<string>App Tunneler</string>
 		</dict>
