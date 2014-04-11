@@ -6,25 +6,26 @@
 //  Copyright (c) 2014 AirWatch. All rights reserved.
 //
 
-#import "ATTableViewViewController.h"
+#import "ATFavoritesViewController.h"
 #import "ATFavoritesModel.h"
 
-@interface ATTableViewViewController (){
+@interface ATFavoritesViewController (){
     NSMutableArray *favorites;
     
 }
 @end
 
-@implementation ATTableViewViewController
+@implementation ATFavoritesViewController
 @synthesize browser;
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        // Hardcode favorites here.
         favorites = [[NSMutableArray alloc] init];
+        [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"localhost" URL:@"localhost"]];
         [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"Google" URL:@"https://www.google.com"]];
-        [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"Demo" URL:@"https://demo.awmdm.com/api/help"]];
+        [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"AirWatch" URL:@"https://www.air-watch.com"]];
         [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"Sharepoint" URL:@"sharepoint"]];
     }
     return self;

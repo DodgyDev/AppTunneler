@@ -10,7 +10,7 @@
 #import "ATProxyViewController.h"
 #import "ATGeneralSettingsViewController.h"
 #import "ATSettingsManager.h"
-#import "ATTableViewViewController.h"
+#import "ATFavoritesViewController.h"
 
 @interface ATBrowserViewController (){
     NSMutableData *webdata;
@@ -21,7 +21,7 @@
     ATProxyViewController *proxyController;
     ATGeneralSettingsViewController *generalSettingsController;
     UITableView *favoritesView;
-    ATTableViewViewController *favoritesController;
+    ATFavoritesViewController *favoritesController;
 }
 
 @end
@@ -36,7 +36,7 @@
         
         //Initializations
         _authed = NO;   //Set auth to start as no, tracks if we've authenticated to an auth required website yet
-        favoritesController = [[ATTableViewViewController alloc] init];
+        favoritesController = [[ATFavoritesViewController alloc] init];
     }
     return self;
 }
@@ -236,15 +236,16 @@
 
 - (IBAction)Btn_Favorites:(id)sender {
     
-    NSLog(@"%@",[[favoritesView delegate] description]);
-    
+    //If favorites menu is already open, close it.
     if(WebView.frame.origin.x!=0){
+        self.WebView.userInteractionEnabled = YES;
         CGRect frame = WebView.frame;
         frame.origin.x = 0;
         favoritesView.hidden = YES;
         [WebView setFrame:frame];
         Btn_Favorites.layer.backgroundColor = [UIColor whiteColor].CGColor;
     }else{
+        self.WebView.userInteractionEnabled = NO;
         Btn_Favorites.layer.backgroundColor = [UIColor yellowColor].CGColor;
         favoritesView.hidden = NO;
         CGRect frame = WebView.frame;

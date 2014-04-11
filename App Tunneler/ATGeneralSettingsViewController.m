@@ -10,6 +10,7 @@
 #import "ATSettingsManager.h"
 #import <AWSDK/AWController.h>
 
+
 @interface ATGeneralSettingsViewController ()
 
 @end
@@ -31,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.view.layer.backgroundColor = [UIColor lightGrayColor].CGColor;
 
     Txt_Home.delegate = self;
@@ -70,6 +72,13 @@
 -(void)viewWillDisappear:(BOOL)animated{
     //Save Changes
     [[ATSettingsManager sharedInstance] SetHomeAddress:Txt_Home.text];
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+ Txt_Home.text = [[ATSettingsManager sharedInstance] GetHomeAddress];
+}
+- (IBAction)Swi_SDK:(id)sender {
     if(Swi_SDK.on){
         [[ATSettingsManager sharedInstance] EnableSDK];
         [[AWController clientInstance] start];
@@ -77,12 +86,5 @@
         [[ATSettingsManager sharedInstance] DisableSDK];
     }
 
-}
-
--(void)viewDidAppear:(BOOL)animated{
- Txt_Home.text = [[ATSettingsManager sharedInstance] GetHomeAddress];
-}
-- (IBAction)Swi_SDK:(id)sender {
-    
 }
 @end
