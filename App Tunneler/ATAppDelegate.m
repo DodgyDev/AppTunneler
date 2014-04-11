@@ -33,15 +33,13 @@
     
     lockVC = [[ATLockViewController alloc] init];
   
-    [self setURLFromManagedConfigs];
+    //[self setURLFromManagedConfigs];
     
     [AWLog sharedInstance].outputDestinationMask = AWLogOutputDestinationDeviceConsole | AWLogOutputDestinationLogFile;
     
     AWController *controller = [AWController clientInstance];
     controller.callbackScheme = @"apptunneler";
     controller.delegate = self;
-    
-    
     
     return YES;
 }
