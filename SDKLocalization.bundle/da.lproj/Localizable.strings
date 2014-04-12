@@ -1,0 +1,195 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "En ukendt server fejl opstod.  Kontakt venligst din administrator.";
+"InvalidCredentialsTitle" = "De angivne legitimationsoplysninger kunne ikke valideres.  Venligst prøv igen.";
+"UnknownTitle" = "Ukendt";
+"UserCancelledOperation" = "Brugeren har annulleret forbindelsen.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "Dataeksempel kunne ikke afsendes";
+"ConnectionFailureFormat" = "Forbindelsen slog fejl-status kode %d";
+"DataSamplerFailedTransmissionDescription" = "Dataeksempel kunne ikke afsendes.";
+"DataSamplerFailedTransmissionReason" = "Dataeksempel ikke  kunne afsendes";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Kunne ikke hente enhedens status";
+"DeviceMustBeEnrolled" = "Enheden skal være registreret";
+"DeviceCheckoutFailed" = "Tjek-ud af enheden slog fejl";
+"ConnectionLostError" = "Forbindelsen til serveren blev afbrudt.\nPrøv igen senere.";
+"NetworkConnectionLost" = "Netværksforbindelsen er tabt";
+"ConnectionUnavailable" = "Forbindelsen ikke tilgængelig";
+"DeviceNotEnrolled" = "Enheden er ikke registreret";
+"ErrorTitle" = "Fejl";
+"DeviceNonCompliant" = "Enheden er ikke compliant";
+"InvalidLocationGroup" = "Placeringsgruppen er ugyldig";
+"DeviceAlreadyCheckedIn" = "Enheden er tjekket ind allerede";
+"DeviceAlreadyCheckedOut" = "Enheden er tjekket ud allerede";
+"InvalidCheckOutRequest" = "Ugyldig tjek-ud anmodning";
+"DeviceCanNotShared" = "Enheden kan ikke deles";
+"UnknownErrorMessage" = "En ukendt server fejl opstod.  Kontakt venligst din administrator.";
+"UnknownError" = "Ukendt fejl";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Enheden er kompatibel med dette miljø. Kontakt venligst din administrator for yderligere support. Fejl kode %d";
+"AWSDKInitializationError" = "Der opstod en fejl. Kunne ikke tilsluttes serveren. Kontakt venligst din administrator for yderligere support. Fejl kode %d";
+"AgentInitializationError" = "Der opstod en fejl.  Venligst registrér din enhed igen.  Hvis du har brug for yderligere hjælp, kontakt din system aministrator.  Fejl kode %d";
+"CompatibilityVerifiedTitle" = "Kompatibilitet bekræftet";
+"CompatibilityVerifiedMessage" = "Kompatibiliteten med serveren bekræftet.";
+"NotEnrolledOrNotCompliant" = "Denne enhed er ikke registreret eller er ikke kompatibel med dette miljø. Venlist kontakt din administrator, hvis du har brug for yderligere hjælp.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AiWatch compliance kunne ikke startes";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Beskadiget URL-adresse anmodning";
+"RequestCauseServerConflict" = "Anmodning om årsag til server konflikten";
+"InvalidSessionTokenError" = "Ugyldig session token fejl";
+"ServerCommunicationError" = "Server kommunikationsfejl";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "AirWatch dataeksempel transmitter kunne ikke sende";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "AirWatch dataeksempel transmitter kunne ikke sende";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Ugyldige legitimationsoplysninger. Tjek venligst dine logind oplysninger og gruppe-id, og prøv igen.";
+"InvalidActivationCodeErrorMessage" = "Den angivne gruppe-id er ugyldig.  Venligst prøv igen.";
+"DeviceNotFoundErrorMessage" = "Denne enhed kan ikke findes på denne AirWatch instans.  Registrer venligst inden du prøver på at benytte Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "Denne enhed er ikke registreret på denne AirWatch instans.  Registrer venligst inden du prøver på at benytte Secure Content Locker.";
+"DeviceMismatchErrorMessage" = "Denne enhed er ikke registreret med denne AirWatch brugerkonto.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "Har modtaget en uventet status code %d";
+"UnexpectedContentTypeFormat" = "Forventet indholdstype %@, fik %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Der er ingen enhedslogfiler til at afsende";
+"NoCrashLogsToSend" = "Der er ingen nedbrugslogfiler til at afsende";
+"EmptyLogFile" = "Logfilen er tom.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "Logfilen indeholder advorsgradsværdi større end eller lige med det konfigurerede niveau.";
+"FailedToSendLogData" = "Kunne Ikke sende logfil data.";
+"WiFiConnectionError" = "Tilslut et WiFI netværk, eller kontakt din system administrator.";
+"NeedsWiFiToSendLogData" = "AirWatch konsollen påkræver en WiFI forbindelse for at send logfil data.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AirWatch begrænsninger startede ikke";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Der opstod en krypteringsfejl med server certifikatet";
+"ServerCertificateNotTrustedError" = "Kan ikke stole på server certifikatet ";
+"SecureChannelHandshakeFailed" = "Handshake slog fejl";
+"FailedToGetToken" = "Kunne ikke tjekke denne enhed ud.  Prøv venligst igen eller kontakt din administrator.";
+"FailedToInvalidateToken" = "Kunne ikke godkende token.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Fuld";
+"UIDeviceBatteryStateChargingMessage" = "Oplader";
+"UIDeviceBatteryStateUnpluggedMessage" = "Ikke tilsluttet";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "Proxy konfigurationen mangler";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Sørg for at serverens konfigurationsegenskab blev indstillet og at der er et gyldigt objekt";
+"ServerConfigurationPropertyHasNotBeenSet" = "Serverens konfigurationsegenskab er ikke oprettet";
+"ProxyConfigurationIsInvalid" = "Proxy konfigurationen er ugyldig";
+"CheckServerConfigurationTypeIsSet" = "Sørg for at serverens konfigurationstype er oprettet";
+"ServerConfigurationTypeIsUnknown" = "Serverens konfigurationsegenskab er ukendt";
+"FailedToRegisterWithNSURLProtocol" = "Kunne ikke registrere med NSURLProtocol";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Sørg for at klassen som du registrerer er en underordnet klasse af NSURLProtocol";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "Klassen som du prøver på at registrere er ikke en underordnet klasse af NSURLProtocol";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Kunne ikke signere denne anmodning";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Der er inget MAG godkendelses certifikat gemt  på enheden, eller det er ugyldigt";
+"ProxyAuthenticationRequired" = "Proxy godkendelsen er påkrævet.";
+"InvalidAuthenticationForProxy" = "Den angivne godkendelse til proxyen er ugyldig.";
+"CheckAuthenticationCredentialsAndTryAgain" = "Tjek dinne godkendelses legitimationsoplysninger og prøv igen.";
+"MissingDeviceRootCertificate" = "Manger enhedens rod certifikat";
+"AnActivationCode(LG)WasNeverSaved" = "Gruppe-id'en blev aldrig gemt.";
+"FailedToGetPACscript" = "Kunne ikke hente PAC skriptet.";
+"SetAutoConfigURLProperty" = "Indstill den automatiske konfigurerede URL-addresse ejenskabet.";
+"AutoConfigURLPropertyIsNotSet" = "Det automatiske konfigurerede URL-addresse ejenskab er ikke oprettet.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Sørg for et gyldigt skript er placeret ved \den specifikerede automatiske konfigurerede URL-adresse.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Kunne ikke afkode dataen der blev hentet ved \den specifikerede automatiske konfigurerede URL-adresse.";
+"FailedToRetrievedAutoConfigUrlData" = "Kunne ikke hente data fra den automatiske konfigurerede URL-addresse.";
+"MakeSurePACURLisValid" = "Sørg for at PAC URL-adressen er gyldig.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss" = "Afvis";
+"CurrentPassword" = "Aktuel adgangskode";
+"NewPassword" = "Ny adgangskode";
+"ReenterNewPassword" = "Angiv ny adgangskode igen.";
+"Change" = "Rediger";
+"Cancel" = "Annuller";
+"Enteryourpasscode:" = "Venligst angiv din adgangskode:";
+"Passcode" = "Adgangskode";
+"Login" = "Log på";
+"Notice" = "Bemærkning";
+"Passworddoesnotmatch" = "Den nye adgangskode som du har angivet matcher ikke.";
+"OK" = "OK";
+"Passworddonotcomplyrestriction" = "Din adgangskode følger ikke retningslinjen";
+"MaximumPasscodeAttemptsMessage" = "Du har opnået det maksimale antal af adgangskode forsøg.  Din enhed blev udsat for Enterprise tørre.";
+"AttemptsLeftMessage" = "Du har %d forsøg tilbage";
+"IncorrectPasscodeEntered" = "Den angivne adgangskode er ikke rigtig";
+"BackOffMessage" = "Din app er deaktiveret. Prøv igen om %d sekunder";
+"NonSimplePasscode" = "Din adgangskode kan ikke være enkel.";
+"AlphanumericPasscodeRequired" = "Din adgangskode kan ikke være alfanumerisk";
+"NumericPasscodeRequired" = "Din adgangskode kan ikke være numerisk";
+"MimimumPasscodeLength" = "Din adgangskode burde have mindst %d bogstaver";
+"MimimumComplexCharacters" = "in adgangskode burde mindst have %d specielle tegn.";
+"ExpiredPasscode" = "Denne adgangskode blev anvendt tidligere.  Venligst indtast en anden adgangskode.";
+"EnterYourPin"            = "Opret en adgangskode";
+"PinCreationMessage"      = "Denne adgangskode anvendes til at logge på denne app.";
+"CreatePin"               = "Venligst opret en adgangskode";
+"PasscodeDidntMatch" = "Adgangskoden matcher ikke.  Venligst indtast den igen.";
+"Continue" = "Fortsæt";
+"EnterAPin" = "Indtast venligst en pin-kode";
+"Pin" = "Pin-kode";
+"ConfirmPin" = "Bekræft pin-kode";
+"ConfirmPasscode"         = "Bekræft adgangskode";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Offline adgang er begrænset. Du skal oprette forbindelse til internettet for at få adgang til ressourcer.";
+"OfflineAccessDurationExceeded" = "Du har opnået grænsen for offline adgang. Du skal oprette forbindelse til internettet for at få adgang til ressourcer.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage" = "Venligst fyld alle felter ud og prøv igen.";
+"AuthenticatingTitle" = "Godkender";
+"ErrorAlert" = "Angiv venligst en AirWatch enhedstjeneste URL-adresee for at fortsætte.";
+"DeviceNotEnrolledAlertMessage" = "Denne enhed er ikke registreret lige nu. Ønsker du at registrere den nu?";
+"ErrorAlertServerUnreachable" = "Det ser ude at serveren ikke er tilgænglig lige nu.  Venligst prøv igen senere.";
+
+"Username" = "Brugernavn";
+"Password" = "Adgangskode";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" = "Godkendelses token";
+"WorkOnline" = "Arbejde online";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

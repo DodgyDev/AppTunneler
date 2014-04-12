@@ -1,0 +1,195 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "Le serveur a rencontré une erreur. Veuillez contacter votre administrateur.";
+"InvalidCredentialsTitle" = "Les identifiants fournis n'ont pas pu être validés. Veuillez réessayer.";
+"UnknownTitle" = "Inconnu";
+"UserCancelledOperation" = "L'utilisateur a annulé la connexion.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "DataSample failed to transmit";
+"ConnectionFailureFormat" = "La connexion a échoué. Le code d'erreur est %d";
+"DataSamplerFailedTransmissionDescription" = "Échec de transmission du Data Sampler ";
+"DataSamplerFailedTransmissionReason" = "Échec de transmission du Data Sampler ";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Impossible d'obtenir le statut du terminal.";
+"DeviceMustBeEnrolled" = "Le terminal doit être inscrit";
+"DeviceCheckoutFailed" = "Le check-out du terminal a échoué";
+"ConnectionLostError" = "La connexion au serveur a été perdue.\nRéessayez plus tard.";
+"NetworkConnectionLost" = "Connexion au réseau perdue";
+"ConnectionUnavailable" = "Connexion non disponible";
+"DeviceNotEnrolled" = "Le terminal n'est pas inscrit";
+"ErrorTitle" = "Erreur";
+"DeviceNonCompliant" = "Le terminal n'est pas conforme";
+"InvalidLocationGroup" = "Le Groupe duquel vous faites un check-out doit être inférieur au Groupe actuel.";
+"DeviceAlreadyCheckedIn" = "Le terminal a déjà effectué un check-in";
+"DeviceAlreadyCheckedOut" = "Le terminal a déjà effectué un check-out";
+"InvalidCheckOutRequest" = "La demande de check-out est non valide";
+"DeviceCanNotShared" = "Le terminal ne peut pas être partagé";
+"UnknownErrorMessage" = "Une erreur inconnue s'est produite.";
+"UnknownError" = "Erreur inconnue";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Le terminal est incompatible avec cet environnement. Veuillez contacter votre administrateur système pour plus d'informations. Code d'erreur %d";
+"AWSDKInitializationError" = "Erreur lors de la connexion au serveur. Veuillez contacter votre administrateur système pour plus d'informations. Code d'erreur %d";
+"AgentInitializationError" = "Une erreur est survenue. Veuillez réinscrire votre terminal. En cas de besoin d'assistance, merci de contacter votre administrateur système. Code d'erreur %d";
+"CompatibilityVerifiedTitle" = "Compatibilité vérifiée";
+"CompatibilityVerifiedMessage" = "La compatibilité au serveur a été vérifiée. ";
+"NotEnrolledOrNotCompliant" = "Ce terminal n'est pas inscrit ou n'est pas compatible avec cet environnement. Veuillez contacter votre administrateur IT en cas de besoin d'assistance.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "Échec de démarrage de la conformité AW";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Requête d'URL incorrect";
+"RequestCauseServerConflict" = "Requête cause un conflit de serveur";
+"InvalidSessionTokenError" = "Erreur - Jeton de session incorrect";
+"ServerCommunicationError" = "Erreur de communication de serveur";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "Échec de transmission de l'émetteur Data Sample AW";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "Échec de transmission de l'émetteur Data Sample AW";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Identifiants incorrects. Veuillez vérifier vos identifiants de connexion et réessayer.";
+"InvalidActivationCodeErrorMessage" = "L'ID de Groupe fourni est incorrect. Veuillez réessayer.";
+"DeviceNotFoundErrorMessage" = "Le terminal n'a pas pu être trouvé sur l'nstance AirWatch. Veuillez vous inscrire avant d'utiliser le Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "Le terminal n'est pas inscrit sur cette instance AirWatch. Veuillez vous inscrire avant d'utiliser le Secure Content Locker";
+"DeviceMismatchErrorMessage" = "Le terminal n'est pas inscrit avec ce compte d'utilisateur AirWatch.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "L'erreur %d a été reçu de manière inattendu";
+"UnexpectedContentTypeFormat" = "Type du contenu attendu %@. Type du contenu reçu %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Aucun journal du terminal à envoyer";
+"NoCrashLogsToSend" = "Aucun journal d'incident à envoyer";
+"EmptyLogFile" = "Le fichier du journal est vide.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "Le journal n'a aucune entrée contenant un niveau de gravité plus élevé ou égal au niveau configuré. ";
+"FailedToSendLogData" = "Échec de l'envoi de données du journal.";
+"WiFiConnectionError" = "Connectez-vous au réseau WIFI ou contactez votre administrateur système. ";
+"NeedsWiFiToSendLogData" = "La console AW requiert une connexion WIFI pour l'envoi des données du journal. ";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "Échec de démarrage des restrictions AW";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Erreur de chiffrement avec le certificat de serveur";
+"ServerCertificateNotTrustedError" = "Certificat de serveur non-fiable";
+"SecureChannelHandshakeFailed" = "Le Handshake a échoué";
+"FailedToGetToken" = "Unable to check out the device. Please try again or contact an administrator.";
+"FailedToInvalidateToken" = "Échec de validation du jeton";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Complet";
+"UIDeviceBatteryStateChargingMessage" = "En charge";
+"UIDeviceBatteryStateUnpluggedMessage" = "Débranchée";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "Il manque la configuration proxy";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Assurez-vous que la propriété de configuration du serveur soit conigurée et valide";
+"ServerConfigurationPropertyHasNotBeenSet" = "La propriété de configuration du serveur n'a pas été configurée";
+"ProxyConfigurationIsInvalid" = "La configuration proxy n'est pas valide";
+"CheckServerConfigurationTypeIsSet" = "Assurez-vous que le type de configuration du serveur soit configurée";
+"ServerConfigurationTypeIsUnknown" = "Le type de configuration du serveur est inconnu";
+"FailedToRegisterWithNSURLProtocol" = "Échec de l'enregistrement ";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Assurez-vous que la classe dans laquelle vous vous enregistrez soit une sous-classe du protocole NSURL";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "La classe dans laquelle vous avez essayé de voous enregistrer n'est pas une sous-classe du protocole NSURL";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Échec de requête de signature";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Aucun certificat d'authentification MAG n'est stocké sur le terminal ou le certificat existant n'est pas valide";
+"ProxyAuthenticationRequired" = "Authentification proxy requise";
+"InvalidAuthenticationForProxy" = "L'authentification fournie au proxy est incorrecte. ";
+"CheckAuthenticationCredentialsAndTryAgain" = "Vérifiez vos identifiants d'authentification et réessayez.";
+"MissingDeviceRootCertificate" = "Certificat racine de terminal manquant";
+"AnActivationCode(LG)WasNeverSaved" = "Aucun ID de Groupe n'a jamais été sauvegardé";
+"FailedToGetPACscript" = "Échec d'obtention de script de configuration automatique de proxy (PAC).";
+"SetAutoConfigURLProperty" = "Configurez la propriété de l'URL de configuration automatique.";
+"AutoConfigURLPropertyIsNotSet" = "La propriété de l'URL de configuration automatique n'est pas configurée.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Assurez-vous qu'un script valide soit situé sous l'URL de configuration automatique.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Échec du décodage des données récupérées de l'URL de configuration automatique.";
+"FailedToRetrievedAutoConfigUrlData" = "Échec de récupération des données de l'URL de configuration automatique";
+"MakeSurePACURLisValid" = "Assurez-vous que l'URL de configuration automatique de proxy (PAC) soit valide.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss" = "Ignorer";
+"CurrentPassword" = "Mot de passe actuel";
+"NewPassword" = "Nouveau mot de passe";
+"ReenterNewPassword" = "Saisir le nouveau code d'accès";
+"Change" = "Modifier";
+"Cancel" = "Annuler";
+"Enteryourpasscode:" = "Veuillez saisir le mot de passe :";
+"Passcode" = "Code d'accès";
+"Login" = "Connexion";
+"Notice" = "Avertissement";
+"Passworddoesnotmatch" = "Le nouveau mot de passe saisi ne correspond pas.";
+"OK" = "OK";
+"Passworddonotcomplyrestriction" = "Votre mot de passe ne satisfait pas les conditions requises. ";
+"MaximumPasscodeAttemptsMessage" = "Vous avez atteint le nombre maximum de tentatives de saisies de code d'accès. Un retrait du contenu d'entreprise va être effectué sur votre terminal.";
+"AttemptsLeftMessage" = "Il vous reste %d tentatives";
+"IncorrectPasscodeEntered" = "Le code d'accès saisi est incorrect";
+"BackOffMessage" = "Votre application est désactivée. Veuillez réessayer dans %d secondes";
+"NonSimplePasscode" =   "Votre code d'accès ne peut être simple.";
+"AlphanumericPasscodeRequired" = "Votre code d'accès n'est pas alphanumérique.";
+"NumericPasscodeRequired" = "Votre code d'accès n'est pas numérique.";
+"MimimumPasscodeLength"   = "Votre code d'accès doit comporter au moins %d lettres.";
+"MimimumComplexCharacters"= "Votre code d'accès doit comporter au moins %d caractères complexes.";
+"ExpiredPasscode"         = "Ce code d'accès a déjà été utilisé. Veuillez saisir un code d'accès différent.";
+"EnterYourPin"            = "Créer un code d'accès";
+"PinCreationMessage"      = "Ce code d'acès sera utilisé pour la connexion à l'application.";
+"CreatePin"               = "Veuillez configurer un code d'accès";
+"PasscodeDidntMatch"      = "Les codes d'acès ne correspondent pas. Veuillez les saisir à nouveau.";
+"Continue"                = "Continuer";
+"EnterAPin"               = "Veuillez saisir un code PIN";
+"Pin"                     = "Code PIN";
+"ConfirmPin"              = "Confirmer le code PIN";
+"ConfirmPasscode"         = "Confirmer le code d'accès";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Accès hors ligne limité. Veuillez vous connecter à Internet afin d'accéder aux ressources.";
+"OfflineAccessDurationExceeded" = "Vous avez atteint la limite du nombre de connexions hors ligne. Veuillez vous connecter à Internet afin d'accéder à ces ressources.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage" = "Veuillez remplir tous les champs et réessayer.";
+"AuthenticatingTitle" = "Authentification";
+"ErrorAlert" = "Veuillez entrer un URL d'inscription du terminal pour continuer";
+"DeviceNotEnrolledAlertMessage" = "Ce terminal n'est actuellement pas inscrit. Voulez-vous l'inscrire maintenant ?";
+"ErrorAlertServerUnreachable" = "Le serveur semble ne pas répondre actuellement. Veuillez réessayer plus tard.";
+
+"Username" = "Nom d'utilisateur";
+"Password" = "Mot de passe";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" = "Jeton auth.";
+"WorkOnline" = "Travailler en ligne";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

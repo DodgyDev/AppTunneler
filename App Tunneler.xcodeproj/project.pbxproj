@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		855F1CAB18F88F510074AAFE /* SDKLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 855F1CAA18F88F510074AAFE /* SDKLocalization.bundle */; };
+		855F1CAD18F88FAB0074AAFE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 855F1CAC18F88FAB0074AAFE /* Settings.bundle */; };
+		855F1CAF18F893710074AAFE /* Activation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 855F1CAE18F893710074AAFE /* Activation.bundle */; };
+		85DE2F9618F9DC2B0054AD71 /* AWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DE2F9518F9DC2B0054AD71 /* AWSDK.framework */; };
 		A08B8D8D18EDCFB100601FE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8D8C18EDCFB100601FE0 /* Foundation.framework */; };
 		A08B8D8F18EDCFB100601FE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8D8E18EDCFB100601FE0 /* CoreGraphics.framework */; };
 		A08B8D9118EDCFB100601FE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8D9018EDCFB100601FE0 /* UIKit.framework */; };
@@ -33,7 +37,6 @@
 		A08B8DDA18EDD49E00601FE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8DD918EDD49E00601FE0 /* QuartzCore.framework */; };
 		A08B8DDC18EDD4A500601FE0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8DDB18EDD4A500601FE0 /* Security.framework */; };
 		A08B8DDE18EDD4AA00601FE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8DDD18EDD4AA00601FE0 /* SystemConfiguration.framework */; };
-		A08B8DE018EDD4FE00601FE0 /* AWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8DDF18EDD4FE00601FE0 /* AWSDK.framework */; };
 		A08B8DE218EDD89900601FE0 /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8DE118EDD89900601FE0 /* libstdc++.6.0.9.dylib */; };
 		A08B8DE618EDE98800601FE0 /* ATBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08B8DE418EDE98800601FE0 /* ATBrowserViewController.m */; };
 		A08B8DE718EDE98800601FE0 /* ATBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08B8DE518EDE98800601FE0 /* ATBrowserViewController.xib */; };
@@ -64,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		855F1CAA18F88F510074AAFE /* SDKLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKLocalization.bundle; sourceTree = "<group>"; };
+		855F1CAC18F88FAB0074AAFE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		855F1CAE18F893710074AAFE /* Activation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Activation.bundle; sourceTree = "<group>"; };
+		85DE2F9518F9DC2B0054AD71 /* AWSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDK.framework; path = "../../AWSDK Frameworks/SDK 4.0.1/AWSDK.framework"; sourceTree = "<group>"; };
 		A08B8D8918EDCFB100601FE0 /* Tunneler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tunneler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08B8D8C18EDCFB100601FE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A08B8D8E18EDCFB100601FE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -94,7 +101,6 @@
 		A08B8DD918EDD49E00601FE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A08B8DDB18EDD4A500601FE0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A08B8DDD18EDD4AA00601FE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A08B8DDF18EDD4FE00601FE0 /* AWSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDK.framework; path = "../../AWSDK Frameworks/SDK 4.0 Partners/AWSDK.framework"; sourceTree = "<group>"; };
 		A08B8DE118EDD89900601FE0 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		A08B8DE318EDE98800601FE0 /* ATBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATBrowserViewController.h; sourceTree = "<group>"; };
 		A08B8DE418EDE98800601FE0 /* ATBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATBrowserViewController.m; sourceTree = "<group>"; };
@@ -117,7 +123,6 @@
 		A0C5897C18F5BF6500D97788 /* ATLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATLockViewController.h; sourceTree = "<group>"; };
 		A0C5897D18F5BF6500D97788 /* ATLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATLockViewController.m; sourceTree = "<group>"; };
 		A0C5897E18F5BF6500D97788 /* ATLockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATLockViewController.xib; sourceTree = "<group>"; };
-		A0C5898118F7263300D97788 /* SDKLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SDKLocalization.bundle; path = "../../AWSDK Frameworks/SDK 4.0 Partners/SDKLocalization.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DE2F9618F9DC2B0054AD71 /* AWSDK.framework in Frameworks */,
 				A08B8DE218EDD89900601FE0 /* libstdc++.6.0.9.dylib in Frameworks */,
-				A08B8DE018EDD4FE00601FE0 /* AWSDK.framework in Frameworks */,
 				A08B8D9118EDCFB100601FE0 /* UIKit.framework in Frameworks */,
 				A08B8DDE18EDD4AA00601FE0 /* SystemConfiguration.framework in Frameworks */,
 				A08B8DDC18EDD4A500601FE0 /* Security.framework in Frameworks */,
@@ -182,9 +187,11 @@
 		A08B8D8B18EDCFB100601FE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0C5898118F7263300D97788 /* SDKLocalization.bundle */,
+				85DE2F9518F9DC2B0054AD71 /* AWSDK.framework */,
+				855F1CAE18F893710074AAFE /* Activation.bundle */,
+				855F1CAC18F88FAB0074AAFE /* Settings.bundle */,
+				855F1CAA18F88F510074AAFE /* SDKLocalization.bundle */,
 				A08B8DE118EDD89900601FE0 /* libstdc++.6.0.9.dylib */,
-				A08B8DDF18EDD4FE00601FE0 /* AWSDK.framework */,
 				A08B8DDD18EDD4AA00601FE0 /* SystemConfiguration.framework */,
 				A08B8DDB18EDD4A500601FE0 /* Security.framework */,
 				A08B8DD918EDD49E00601FE0 /* QuartzCore.framework */,
@@ -373,7 +380,7 @@
 				ORGANIZATIONNAME = AirWatch;
 				TargetAttributes = {
 					A08B8D8818EDCFB100601FE0 = {
-						DevelopmentTeam = YCA243M9TR;
+						DevelopmentTeam = 9R9TQ8V583;
 					};
 					A08B8DA318EDCFB100601FE0 = {
 						TestTargetID = A08B8D8818EDCFB100601FE0;
@@ -403,6 +410,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855F1CAF18F893710074AAFE /* Activation.bundle in Resources */,
+				855F1CAD18F88FAB0074AAFE /* Settings.bundle in Resources */,
+				855F1CAB18F88F510074AAFE /* SDKLocalization.bundle in Resources */,
 				A08B8DFE18EF12CF00601FE0 /* settings.png in Resources */,
 				A08B8DE718EDE98800601FE0 /* ATBrowserViewController.xib in Resources */,
 				A08B8D9718EDCFB100601FE0 /* InfoPlist.strings in Resources */,
@@ -562,17 +572,23 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Lucas/Desktop/AirWatch/Development/iOS/AWSDK\\ Frameworks/SDK\\ 4.0\\ Partners",
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.0.1,
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.0,
+					Partners,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App Tunneler/App Tunneler-Prefix.pch";
 				INFOPLIST_FILE = "App Tunneler/App Tunneler-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Tunneler;
-				PROVISIONING_PROFILE = "DECD781D-D766-49EC-A332-D54BE8F9B91C";
+				PROVISIONING_PROFILE = "05E4528B-50C3-4F48-B1FD-5F0917275D90";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -584,17 +600,23 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: AirWatch";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Lucas/Desktop/AirWatch/Development/iOS/AWSDK\\ Frameworks/SDK\\ 4.0\\ Partners",
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.0.1,
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.0,
+					Partners,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App Tunneler/App Tunneler-Prefix.pch";
 				INFOPLIST_FILE = "App Tunneler/App Tunneler-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Tunneler;
-				PROVISIONING_PROFILE = "DECD781D-D766-49EC-A332-D54BE8F9B91C";
+				PROVISIONING_PROFILE = "05E4528B-50C3-4F48-B1FD-5F0917275D90";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

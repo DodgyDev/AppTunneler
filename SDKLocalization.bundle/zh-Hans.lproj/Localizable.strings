@@ -1,0 +1,196 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "发生未知服务器错误。请联系您的管理员。";
+"InvalidCredentialsTitle" = "无法验证所提供的凭证。请重试。";
+"UnknownTitle" = "未知";
+"UserCancelledOperation" = "用户已取消连接。";
+"Ok" = "确定";
+"DataSampleFailedTransmitTitle" = "DataSample 传输失败";
+"ConnectionFailureFormat" = "连接失败并收到状态码 %d";
+"DataSamplerFailedTransmissionDescription" = "数据采样器传输失败";
+"DataSamplerFailedTransmissionReason" = "数据采样器传输失败";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "无法检索设备状态";
+"DeviceMustBeEnrolled" = "设备必须注册";
+"DeviceCheckoutFailed" = "设备签出失败";
+"ConnectionLostError" = "服务器连接丢失。\n请稍后再试";
+"NetworkConnectionLost" = "网络连接丢失";
+"ConnectionUnavailable" = "连接不可用";
+"DeviceNotEnrolled" = "设备未注册";
+"ErrorTitle" = "错误";
+"DeviceNonCompliant" = "设备不合规";
+"InvalidLocationGroup" = "组织组无效。";
+"DeviceAlreadyCheckedIn" = "设备已签入";
+"DeviceAlreadyCheckedOut" = "设备已签出";
+"InvalidCheckOutRequest" = "签出请求无效";
+"DeviceCanNotShared" = "设备不可共享";
+"UnknownErrorMessage" = "发生未知错误。请联系您的管理员";
+"UnknownError" = "未知错误";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "设备和此环境不兼容。请联系您的系统管理员请求进一步协助。错误代码 %d";
+"AWSDKInitializationError" = "连接服务器时出错。请重新注册您的设备。如果您需要更多的帮助，请联系您的系统管理员。错误代码 %d";
+"AgentInitializationError" = "发生错误。请重新注册您的设备。如需进一步协助，请联系您的系统管理员。错误代码 %d";
+"CompatibilityVerifiedTitle" = "兼容性已验证";
+"CompatibilityVerifiedMessage" = "已验证与服务器兼容。";
+"NotEnrolledOrNotCompliant" = "设备尚未注册或与此环境不兼容。请联系您的 IT 管理员请求进一步协助。";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AW 合规策略启动失败";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "URL 请求错误";
+"RequestCauseServerConflict" = "请求造成服务器冲突";
+"InvalidSessionTokenError" = "无效会话令牌错误";
+"ServerCommunicationError" = "服务器通信错误";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "AW 数据采样发送器传输失败";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "AW 数据采样发送器传输失败";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "凭证无效。请检查您的登录信息和组 ID，然后重试。";
+"InvalidActivationCodeErrorMessage" = "所提供的组 ID 无效。请重试。";
+"DeviceNotFoundErrorMessage" = "此 AirWatch 实例中未发现该设备。请先注册再设法使用 Secure Content Locker。";
+"DeviceNotEnrolledErrorMessage" = "设备未在此 AirWatch 实例中注册。请先注册再设法使用 Secure Content Locker。";
+"DeviceMismatchErrorMessage" = "设备未使用此 AirWatch 用户账号注册。";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "接收到 %d 的意外状态码";
+"UnexpectedContentTypeFormat" = "预期内容类型为%@，但得到%@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "没有要发送的设备日志";
+"NoCrashLogsToSend" = "没有要发送的故障日志";
+"EmptyLogFile" = "日志文件空白。";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "日志记录不含严重程度高于或等于所配置程度的条目。";
+"FailedToSendLogData" = "发送日志数据失败。";
+"WiFiConnectionError" = "连接 WIFI 网络，或联系您的系统管理员。";
+"NeedsWiFiToSendLogData" = "AW 控制台需要建立 WIFI 连接才能发送日志数据。";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AW 限制策略启动失败";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "服务器证书加密错误";
+"ServerCertificateNotTrustedError" = "服务器证书不受信任";
+"SecureChannelHandshakeFailed" = "握手失败";
+"FailedToGetToken" = "无法签出设备。请重试或联系管理员。";
+"FailedToInvalidateToken" = "无法使令牌失效。";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "满电";
+"UIDeviceBatteryStateChargingMessage" = "正在充电";
+"UIDeviceBatteryStateUnpluggedMessage" = "未插电";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "缺少代理服务器配置";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "请确保服务器配置属性已设置完毕并且是有效对象";
+"ServerConfigurationPropertyHasNotBeenSet" = "尚未设置服务器配置属性";
+"ProxyConfigurationIsInvalid" = "代理服务器配置无效";
+"CheckServerConfigurationTypeIsSet" = "请确保已设置服务器配置类型";
+"ServerConfigurationTypeIsUnknown" = "服务器配置类型未知";
+"FailedToRegisterWithNSURLProtocol" = "注册 NSURLProtocol 失败";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "请确保您所注册的类属于 NSURLProtocol 的子类";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "您试图注册的类不属于 NSURLProtocol 的子类";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "签字请求失败";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "没有在设备上存储 MAG 授权证书，或该证书无效";
+"ProxyAuthenticationRequired" = "需要代理服务器身份验证。";
+"InvalidAuthenticationForProxy" = "为代理服务器提供的身份验证无效。";
+"CheckAuthenticationCredentialsAndTryAgain" = "请检查您的身份验证凭证，然后重试。";
+"MissingDeviceRootCertificate" = "缺少设备根证书";
+"AnActivationCode(LG)WasNeverSaved" = "从未保存激活码（组织组）。";
+"FailedToGetPACscript" = "获取 PAC 脚本失败。";
+"SetAutoConfigURLProperty" = "设置自动配置 URL 属性。";
+"AutoConfigURLPropertyIsNotSet" = "尚未设置自动配置 URL 属性。";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "请确保指定的自动配置 URL 内有一个有效的脚本。";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "无法对从自动配置 URL 检索到的数据进行解码。";
+"FailedToRetrievedAutoConfigUrlData" = "无法从自动配置 URL 中检索数据。";
+"MakeSurePACURLisValid" = "请确保 PAC URL 有效。";
+
+/********************** AWPasscode Handler ************/
+"Dismiss" = "取消";
+"CurrentPassword" = "当前密码";
+"NewPassword" = "新密码";
+"ReenterNewPassword" = "重新输入新密码";
+"Change" = "更改";
+"Cancel" = "取消";
+"Enteryourpasscode:" = "请输入您的密码：";
+"Passcode" = "密码";
+"Login" = "登录";
+"Notice" = "注意";
+"Passworddoesnotmatch" = "您输入的新密码不匹配。";
+"OK" = "确定";
+"Passworddonotcomplyrestriction" = "您的密码不符合限制规定";
+"MaximumPasscodeAttemptsMessage" = "您已达到密码尝试次数上限。将对您的设备执行企业擦除。";
+"AttemptsLeftMessage" = "您还有 %d 次尝试机会";
+"IncorrectPasscodeEntered" = "输入的密码不正确";
+"BackOffMessage" = "您的应用被禁用。请在%d 秒内再试";
+"NonSimplePasscode" =   "您的密码不能为简单密码。";
+"AlphanumericPasscodeRequired" = "您的密码不是字母数字密码。";
+"NumericPasscodeRequired" = "您的密码不是数字密码";
+"MimimumPasscodeLength"   = "您的密码应当至少有 %d 个字母。";
+"MimimumComplexCharacters"= "您的密码应当至少有 %d 个复杂字符。";
+"ExpiredPasscode"         = "此密码以前用过。请输入一个不同的密码。";
+"EnterYourPin"            = "创建密码";
+"PinCreationMessage"      = "此密码将被用于登录该应用。";
+"CreatePin"               = "请设置密码";
+"PasscodeDidntMatch"      = "密码不匹配，请重新输入";
+"Continue"                = "继续";
+"EnterAPin"               = "请输入一个 PIN 码";
+"Pin"                     = "PIN 码";
+"ConfirmPin"              = "确认 PIN 码";
+"ConfirmPasscode"         = "确认密码";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "脱机访问受一定限制。请连接到互联网后再访问有关资源。";
+"OfflineAccessDurationExceeded" = "您已达到脱机访问的时限。请连接到互联网后再访问有关资源。";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"= "请完成所有字段，然后重试。";
+"AuthenticatingTitle" = "正在验证";
+"ErrorAlert"="请提供一个 AirWatch 设备服务网址再继续。";
+"DeviceNotEnrolledAlertMessage"="此设备当前未注册。您要现在注册吗？";
+"ErrorAlertServerUnreachable"= "当前无法连接到服务器。请稍后再试。";
+
+"Username"="用户名";
+"Password" = "密码";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="授权令牌";
+"WorkOnline" = "联机工作";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";
+

@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A4796328-3588-4C86-9C15-D8468F31B739</string>
+	<string>9ABAE74B-1633-4243-9164-2BF46735F6A7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>App Tunneler</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>file:///Users/Lucas/Desktop/AirWatch/Development/iOS/Projects/AppTunneler/App%20Tunneler.xcodeproj/project.xcworkspace/</string>
+	<string>ssh://github.com/GTLucas/AppTunneler.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

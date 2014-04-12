@@ -1,0 +1,197 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "حصل خطأ بالخادم. الرّجاء الإتّصال بالمسؤول التّقني";
+"InvalidCredentialsTitle" = "لم تتمّ المصادقة على البيانات المدخلة. الرّجاء إعادة المحاولة";
+"UnknownTitle" = "غير معروف";
+"UserCancelledOperation" = "قام بالمستخدم بإلغاء الإتّصال";
+"Ok" = "نعم";
+"DataSampleFailedTransmitTitle" = "لم تنجح عمليّة نقل عيّنة البانات";
+"ConnectionFailureFormat" = "%d لم تنجح عمليّة الإتّصال. رمز الخطأ";
+"DataSamplerFailedTransmissionDescription" = "وصف فشل محاولة إرسال متصفّح البيانات";
+"DataSamplerFailedTransmissionReason" = "سبب فشل محاولة إرسال متصفّح البيانات";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "غير قادر على إسترجاع حالة الجهاز";
+"DeviceMustBeEnrolled" = "يجب أن يكون الجهاز مسجّلا";
+"DeviceCheckoutFailed" = "فشلت محاولة إخراج الجهاز";
+"ConnectionLostError" = "تمّ فقدان الإتّصال بالخادم \n الرّجاء إعادة المحاولة مرّة أخرى";
+"NetworkConnectionLost" = "تمّ فقدان الإتّصال بالشّبكة";
+"ConnectionUnavailable" = "الإتّصال غير متوفّر";
+"DeviceNotEnrolled" = "الجهاز غير مسجّل";
+"ErrorTitle" = "خطأ";
+"DeviceNonCompliant" = "الجهاز غير متطابق";
+"InvalidLocationGroup"  = "مجموعة الموقع غير صحيحة";
+"DeviceAlreadyCheckedIn" = "تمّ إدخال الجهاز مسبقا";
+"DeviceAlreadyCheckedOut" = "تمّ إخراج الجهاز مسبقا";
+"InvalidCheckOutRequest" = "طلب خروج غير صحيح";
+"DeviceCanNotShared" = "لا يمكن مشاركة الجهاز";
+"UnknownErrorMessage" = "حصل خطأ بالخادم. الرّجاء الإتّصال بالمسؤول التّقني";
+"UnknownError" = "خطأ غير معروف";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "الجهاز غير متوافق مع هذه البيئة. يرجى الاتصال بالمسؤول التّقني للحصول على مزيد من المساعدة. رمز الخطأ %d";
+"AWSDKInitializationError" = "حدث خطأ أثناء الاتصال بالخادم. يرجى الاتصال بالمسؤول التّقني للحصول على مزيد من المساعدة. رمز الخطأ %d";
+"AgentInitializationError" = "حدث خطأ. يرجى إعادة تسجيل الجهاز. إذا كنت تحتاج إلى مزيد من المساعدة يرجى الاتصال بالمسؤول التّقني. رمز الخطأ %d";
+"CompatibilityVerifiedTitle" = "تمّ التّثبّت من التّطابق";
+"CompatibilityVerifiedMessage" = "تمّ التّثبّت من التّطابق مع الخادم";
+"NotEnrolledOrNotCompliant" = "الجهاز غير مسجل أو غير متوافق مع هذه البيئة. يرجى الاتصال بالمسؤول التّقني للحصول على مزيد من المساعدة";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "فشلت محاولة بدء تطابق آرواتش";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "رابط طلب خاطئ";
+"RequestCauseServerConflict" = "الطّلب يسبّب تضاربا في الخادم";
+"InvalidSessionTokenError" = "خطأ روز الحصّة غير صحيح";
+"ServerCommunicationError" = "خطأ في الإتّصال بوكيل الخادم";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "لم تنجح عمليّة نقل عيّنة البانات";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "لم تنجح عمليّة نقل عيّنة البانات";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "البيانات غير صحيحة. الرّجاء التّثبّت من تفاصيل بيانات تسجيل الدّخول و إعادة المحاولة مرّة أخرى";
+"InvalidActivationCodeErrorMessage" = "لم تتمّ المصادقة على معرّف المجموعة المدخل. الرّجاء إعادة المحاولة";
+"DeviceNotFoundErrorMessage" = "لمّ يتمّ العثور على هذا الجهاز. الرّجاء قم بتسجيل الجهاز قبل الشّروع في إستخدام التّطبيقات";
+"DeviceNotEnrolledErrorMessage" = "هذا الجهاز غير مسجّل. الرّجاء قم بتسجيل الجهاز قبل الشّروع في إستخدام التّطبيقات";
+"DeviceMismatchErrorMessage" = "هذ الجهاز غير مسحّل في هذا الحساب";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "%d تحصّل على رمز حالة غير متوقّع";
+"UnexpectedContentTypeFormat"  = "توقع محتوى من نوع @٪ وتحصل على محتوى من نوع @٪";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "لا توجد أيّة سجلّات أجهزة للإرسال";
+"NoCrashLogsToSend" = "لا توجد أيّة سجلّات إنهيار للإرسال";
+"EmptyLogFile" ="ملف السّجلات فارغ";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "السّجل يحتوي على عناصر ذات صعوبة أكبر من أو مساوية لمستوى التّكوين";
+"FailedToSendLogData" = "فشلت محاولة إرسال سجل البيانات";
+"WiFiConnectionError" = "الرّجاء الإتّصال بشبكة واي-فاي أو الإتّصال بمسؤول تقني";
+"NeedsWiFiToSendLogData" = "تتطلّب وحدة تحكّم آرواتش الإتّصال بشبكة واي-فاي للتّمكّن من إرسال سجل البيانات";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "فشلت محاولة تنشيط التذقييدات";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "خطأ في تشفير شهادة الخادم";
+"ServerCertificateNotTrustedError" = "خطأ شهادة الخام غير موثوق فيها";
+"SecureChannelHandshakeFailed"  = "لم ينجح ال Handshake";
+"FailedToGetToken"  = "غير قادر على إخراج الجهاز، الرّجاء الإتّصال بمسؤول تقني أو إعادة المحاولة مرّة أخرى";
+"FailedToInvalidateToken" = "غير قادر علر عدم الموافقة على الرّمز";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "ممتلء";
+"UIDeviceBatteryStateChargingMessage" = "جار الشّحن";
+"UIDeviceBatteryStateUnpluggedMessage" = "غير متّصل بالكهرباء";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "وكيل التّكوين مفقود";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "الرّجاء التّأكّد من إعداد و صحّة الملكيّة الخاصّة بتكوين الخادم";
+"ServerConfigurationPropertyHasNotBeenSet" = "لم يتم تعيين الملكية الخّاصّة بتكوين الخادم ";
+"ProxyConfigurationIsInvalid" = "تكوين الخادم غير صحيح";
+"CheckServerConfigurationTypeIsSet" = "الرّجاء التأكّد من إعداد نوع تكوين الخادم";
+"ServerConfigurationTypeIsUnknown" = "نوع تكوين الخادم غير معروف";
+"FailedToRegisterWithNSURLProtocol" = "فشلت محاولة التّسجيل في بروتوكول رابط NS";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "الرّجاء التّثبّت من التّسجيل في مجموعة مرتبطة ببروتوكول رابط NS";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "المجموعة المرغوب بتسجيلها ليست مرتبطة ببروتوكول رابط NS";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "فشلت محاولة توقيع الطّلب";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "لا توجد شهادة تحقّق MAG مخزّنة في الجهاز، أو يمكن أن تكون خاطئة";
+"ProxyAuthenticationRequired" = "مطلوب التّحقّق من الوكيل";
+"InvalidAuthenticationForProxy" = "تقرير التّحقّق الذّي تمّ تقديمه للوكيل غير صحيح";
+"CheckAuthenticationCredentialsAndTryAgain" = "الرّجاء التّثبّت من بيانات التّحقّق ثمّ إعادة المحاولة مرّة أخرى";
+"MissingDeviceRootCertificate" = "شهادة جذر الجهاز مفقودة";
+"AnActivationCode(LG)WasNeverSaved" = " لم يتمّ حفظ رمز التّنشيط (LG)";
+"FailedToGetPACscript" = "غير قادر على الحصول على نصّ PAC";
+"SetAutoConfigURLProperty" = "إعداد ملكيّة رابط التّكوين الآلي";
+"AutoConfigURLPropertyIsNotSet" = "لم يتمّ إعداد ملكيّة رابط التّكوين الآلي";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "الرّجاء التّثبّت من وجود نصّ في رابط التّكوين الآلي المحدّد";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "غير قادر على حلّ تشفير البيانات المسترجعة من رابط التّكوين الآلي";
+"FailedToRetrievedAutoConfigUrlData" = "فشل محاولت إسترجاع البيانات منذ رابط التّكوين الآلي";
+"MakeSurePACURLisValid" = "الرّجاء التّأكّد من صحّة رابط خادم PAC";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "إستبعاد";
+"CurrentPassword" = "كلمة المرور الحاليّة";
+"NewPassword"  = "كلمة المرور الجديدة";
+"ReenterNewPassword" = "أعد إدخال كلمة المرور";
+"Change"            = "تغيير";
+"Cancel"            = "إلغاء";
+"Enteryourpasscode:" = "الرّجاء إدخال كلمة المرور";
+"Passcode"          = "كلمة المرور";
+"Login"             = "تسجيل الدّخول";
+"Notice"            = "ملاحظة";
+"Passworddoesnotmatch" = "إسم المستخدم الجديد غير متطابق";
+"OK"                = "نعم";
+"Passworddonotcomplyrestriction"  = "كلمة المرور غير متطابقة مع التّقييدات";
+"MaximumPasscodeAttemptsMessage" = "لقد بلغتم العدد الأقصى المسموح به من محاولات إدخال كلمة المرور. لقد تمّ مسح جميع محتوى الشّركة من الجهاز";
+
+"AttemptsLeftMessage" = "فقط %d محاولات متبقيّة";
+"IncorrectPasscodeEntered" = "كلمة المرور غير صحيحة";
+"BackOffMessage"  = "التّطبيق غير فعّال. الرّجاء إعادة المحاولة بعد %d ثواني";
+"NonSimplePasscode" =   "لا يمكن أن تكزن كلمة المرور بسيطة";
+"AlphanumericPasscodeRequired" = "كلمة المرور لا تحتوي على حروف و أرقام";
+"NumericPasscodeRequired" = "كلمة المرور ليست رقميّة";
+"MimimumPasscodeLength"   = "يجب أن تحتوي كلمة المرور على الأقّل على أحرف %d";
+"MimimumComplexCharacters"= "يجب أن تحتوي كلمة المرور على الأقّل على %d أحرف معقّدة";
+"ExpiredPasscode"         = "هذا الكود مستعمل مسبقا، الرّجاء إدخال كود جديد";
+"EnterYourPin"            = "إنشاء كلمة مرور";
+"PinCreationMessage"      = "سيقع إستخدام كلمة المرور هذه عند تسجيل الدّخول";
+"CreatePin"               = "الرّجاء إنشاء كلمة مرور";
+"PasscodeDidntMatch"      = "كلمة المرور غير مطابقة، الرّجاء المحاولة مرّة أخرى";
+"Continue"                = "Tالمواصلة";
+"EnterAPin"               = "الرّجاء إدخال كود البين";
+"Pin"                     = "كود البين";
+"ConfirmPin"              = "تأكيد كود البين";
+"ConfirmPasscode"         = "TODO: Confirm Passcode";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "TODO: Offline access is restricted. Please connect to the internet to access resources.";
+"OfflineAccessDurationExceeded" = "TODO: You have reached limit of offline access. Please connect to the internet to access resources.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"= "الرّجاء ملء كلّ الفراغات ثمّ إعادة المحاولة مرّة أخرى";
+"AuthenticatingTitle" = "جار التّحقّق";
+"ErrorAlert"="يبدو أنّه لا يمكن الإتّصال بالخادم في الوقت الحالي. الرّجاء إعادة المحاولة مرّة أخرى";
+"DeviceNotEnrolledAlertMessage"="هذا الجهاز غير مسجّل. هل ترغب في تسجيله الآن؟";
+"ErrorAlertServerUnreachable"= "يبدو أنّه لا يمكن الإتّصال بالخادم في الوقت الحالي. الرّجاء إعادة المحاولة مرّة أخرى";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="رمز التّحقّق";
+"WorkOnline" =  "العمل في حالة الإتّصال";
+
+"Username"="إسم المستخدم";
+"Password" = "كلمة المرور";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";
+

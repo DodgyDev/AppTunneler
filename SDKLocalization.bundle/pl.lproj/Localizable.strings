@@ -1,0 +1,195 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "Wystąpił nieznany błąd serwera. Proszę skontaktować się z administratorem.";
+"InvalidCredentialsTitle" = "Dostarczone poświadczenia nie mogą być zatwierdzone. Proszę spróbować ponownie.";
+"UnknownTitle" = "Nieznany";
+"UserCancelledOperation" = "Użytkownik anulował połączenie.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "Transmisja przykładu danych nieudana";
+"ConnectionFailureFormat" = "Połączenie nie powiodło się z kodem stanu %d";
+"DataSamplerFailedTransmissionDescription" = "Przykład transmisji danych nie powiódł się";
+"DataSamplerFailedTransmissionReason" = "Przykład transmisji danych nie powiódł się";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Nie można pobrać stanu urządzenia";
+"DeviceMustBeEnrolled" = "Urządzenie musi być zarejestrowane";
+"DeviceCheckoutFailed" = "Wymeldowanie urządzenia nie powiodło się";
+"ConnectionLostError" = "Połączenie z serwerem zostało utracone.\nSpróbuj ponownie później.";
+"NetworkConnectionLost" = "Połączenie sieciowe utracone";
+"ConnectionUnavailable" = "Połączenie niedostępne";
+"DeviceNotEnrolled" = "Urządzenie nie jest zarejestrowane";
+"ErrorTitle" = "Błąd";
+"DeviceNonCompliant" = "Urządzenie nie jest zgodne";
+"InvalidLocationGroup" = "Grupa lokalizacyjna jest nieprawidłowa";
+"DeviceAlreadyCheckedIn" = "Urządzenie jest już zameldowane";
+"DeviceAlreadyCheckedOut" = "Urządzenie jest już wymeldowane";
+"InvalidCheckOutRequest" = "Nieprawidłowe żądanie wymeldowania";
+"DeviceCanNotShared" = "Urządzenie nie może być współdzielone";
+"UnknownErrorMessage" = "Wystąpił nieznany błąd serwera. Proszę skontaktować się z administratorem.";
+"UnknownError" = "Nieznany błąd";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Urządzenie nie jest kompatybilne z tym środowiskiem. Proszę skontaktować się z administratorem systemu w celu uzyskania pomocy. Kod błędu %d";
+"AWSDKInitializationError" = "Błąd połączenia z serwerem. Proszę skontaktować się z administratorem systemu w celu uzyskania pomocy. Kod błędu %d";
+"AgentInitializationError" = "Wystąpił błąd. Proszę o ponowną rejestrację urządzenia. Jeśli potrzebujesz pomocy, skontaktuj się z administratorem systemu. Kod błędu %d";
+"CompatibilityVerifiedTitle" = "Kompatybilność zweryfikowana";
+"CompatibilityVerifiedMessage" = "Kompatybilność z serwerem została zweryfikowana.";
+"NotEnrolledOrNotCompliant" = "Urządzenie nie jest zarejestrowane lub nie jest kompatybilne z tym środowiskiem. Proszę skontaktować się z administratorem IT w celu uzyskania pomocy.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "Nie można uruchomić zgodności AW";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Nieprawidłowe żądanie URL";
+"RequestCauseServerConflict" = "Konflikt serwera spowodowany żądaniem";
+"InvalidSessionTokenError" = "Błąd nieważnego tokenu sesji ";
+"ServerCommunicationError" = "Błąd komunikacji serwera";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "Transmisja przykładowych danych AW nie powiodła się";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "Transmisja przykładowych danych AW nie powiodła się";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Nieprawidłowe dane uwierzytelniające. Proszę sprawdzić swoje dane logowania i ID grupy i spróbować ponownie.";
+"InvalidActivationCodeErrorMessage" = "Podane ID grupy jest nieprawidłowe. Proszę spróbować ponownie.";
+"DeviceNotFoundErrorMessage" = "Urządzenie nie zostało znalezione w AirWatch. Proszę się zarejestrować przed przystąpieniem do korzystania z Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "Urządzenie nie jest zarejestrowane w AirWatch. Proszę się zarejestrować przed przystąpieniem do korzystania z Secure Content Locker.";
+"DeviceMismatchErrorMessage" = "Urządzenie nie jest zarejestrowane z tym kontem użytkownika AirWatch.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "Otrzymano nieoczekiwany kod stanu %d";
+"UnexpectedContentTypeFormat" = "Oczekiwany typ zawartości %@, otrzymał %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Brak dzienników urządzenia do wysłania";
+"NoCrashLogsToSend" = "Brak dzienników zdarzeń do wysłania";
+"EmptyLogFile" = "Plik dziennika jest pusty.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "Dziennik nie zawiera wejścia z ważnością większą lub równą poziomie konfiguracji.";
+"FailedToSendLogData" = "Nie udało się wysłać danych dziennika.";
+"WiFiConnectionError" = "Podłącz się do sieci WiFi, lub skontaktuj się z administratorem systemu.";
+"NeedsWiFiToSendLogData" = "Konsola AW wymaga podłączenia z siecią WiFi, aby wysłać dane dziennika.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "Nie można uruchomić ograniczeń AW";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Błąd szyfrowania z certyfikatem serwera";
+"ServerCertificateNotTrustedError" = "Błąd certyfikatu niezaufanego serwera";
+"SecureChannelHandshakeFailed" = "Uzgadnianie nie powiódł się";
+"FailedToGetToken" = "Nie można wymeldować urządzenia. Spróbuj ponownie lub skontaktuj się z administratorem.";
+"FailedToInvalidateToken" = "Nie udało się potwierdzić tokenu.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Pełny";
+"UIDeviceBatteryStateChargingMessage" = "Ładowanie";
+"UIDeviceBatteryStateUnpluggedMessage" = "Odłączony";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "Brak konfiguracji Proxy";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Upewnij się, że konfiguracja serwera została ustawiona i jest ważnym obiektem";
+"ServerConfigurationPropertyHasNotBeenSet" = "Konfiguracja serwera nie została ustawiona";
+"ProxyConfigurationIsInvalid" = "Konfiguracja Proxy jest nieważna";
+"CheckServerConfigurationTypeIsSet" = "Upewnij się, że typ konfiguracji serwera jest ustawiony";
+"ServerConfigurationTypeIsUnknown" = "Typ konfiguracji serwera jest nieznany";
+"FailedToRegisterWithNSURLProtocol" = "Rejestracja z protokołem NSURL nie powiodła się";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Upewnij się, że klasa, którą rejestrujesz jest podklasą protokołu NSURL";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "Klasa, którą rejestrujesz nie jest podklasą protokołu NSURL";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Nie udało się podpisać żądania";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Urządzenie nie posiada certyfikatu uwierzytelniania MAG lub jest on nieważny";
+"ProxyAuthenticationRequired" = "Wymagane uwierzytelnienie Proxy";
+"InvalidAuthenticationForProxy" = "Uwierzytelnienie dostarczone do Proxy jest nieważne.";
+"CheckAuthenticationCredentialsAndTryAgain" = "Sprawdź poświadczenia uwierzytelniające i spróbuj ponownie.";
+"MissingDeviceRootCertificate" = "Brak certyfikatu urządzenia głównego";
+"AnActivationCode(LG)WasNeverSaved" = "ID grupy nie zostało zapisane.";
+"FailedToGetPACscript" = "Nie udało się uzyskać skryptu PAC.";
+"SetAutoConfigURLProperty" = "Ustaw automatyczną konfigurację URL";
+"AutoConfigURLPropertyIsNotSet" = "Automatyczna konfiguracja URL nie jest ustawiona";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Upewnij się, że ważny skrypt znajduje się w \ określonej automatycznej konfiguracji URL.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Nie udało się rozszyfrować danych pobranych z \automatycznej konfiguracji URL.";
+"FailedToRetrievedAutoConfigUrlData" = "Nie udało się pobrać danych z adresu URL konfiguracji automatycznej.";
+"MakeSurePACURLisValid" = "Upewnij się, że URL PAC URL jest ważny.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "Odrzuć";
+"CurrentPassword" = "Bieżące hasło";
+"NewPassword"  = "Nowe hasło";
+"ReenterNewPassword" = "Wpisz hasło ponownie";
+"Change"            = "Zmień";
+"Cancel"            = "Anuluj";
+"Enteryourpasscode:" = "Proszę wprowadzić kod dostępu:";
+"Passcode"          = "Kod dostępu";
+"Login"             = "Zaloguj";
+"Notice"            = "Powiadomienie";
+"Passworddoesnotmatch" = "Wprowadzone nowe hasło nie pasuje";
+"OK"                = "OK";
+"Passworddonotcomplyrestriction"  = "Hasło nie jest zgodne z ograniczeniami";
+"MaximumPasscodeAttemptsMessage" = "Maksymalna liczba nieudanych prób wprowadzenia hasła została osiągnięta. Wykonany został firmowy wymaz informacji.";
+"AttemptsLeftMessage" = "Zostało %d prób wprowadzenia hasła";
+"IncorrectPasscodeEntered" = "Wprowadzony kod dostępu jest nieprawidłowy";
+"BackOffMessage"  = "Aplikacja została wyłączona. Spróbuj ponownie za %d sekund";
+"NonSimplePasscode" =   "Hasło nie może być proste.";
+"AlphanumericPasscodeRequired" = "Hasło nie jest alfanumeryczne.";
+"NumericPasscodeRequired" = "Hasło nie jest numeryczne.";
+"MimimumPasscodeLength"   = "Hasło powinno zawierać przynajmniej %d liter.";
+"MimimumComplexCharacters"= "Hasło powinno zawierać przynajmniej %d złożonych znaków.";
+"ExpiredPasscode"         = "To hasło było używane wcześniej. Proszę wprowadzić inne hasło.";
+"EnterYourPin"            = "Utwórz hasło";
+"PinCreationMessage"      = "To hasło będzie używane do logowania się do aplikacji";
+"CreatePin"               = "Proszę ustawić hasło";
+"PasscodeDidntMatch"      = "Hasła nie pasują, spróbuj ponownie";
+"Continue"                = "Kontynuuj";
+"EnterAPin"               = "Proszę wpisać kod PIN";
+"Pin"                     = "PIN";
+"ConfirmPin"              = "Potwierdź PIN";
+"ConfirmPasscode"         = "Potwierdź hasło";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Dostęp w trybie Offline jest ograniczony. Połącz się z Internetem, aby uzyskać dostęp do zasobów.";
+"OfflineAccessDurationExceeded" = "Dostęp w trybie Offline został przekroczony. Połącz się z Internetem, aby uzyskać dostęp do zasobów.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage" = "Proszę wypełnić wszystkie pola i spróbować ponownie.";
+"AuthenticatingTitle" = "Uwierzytelnianie";
+"ErrorAlert" = "Proszę dostarczyć URL usług urządzenia AirWatch, aby kontynuować.";
+"DeviceNotEnrolledAlertMessage" = "To urządzenie nie jest obecnie zarejestrowane. Czy zarejestrować teraz?";
+"ErrorAlertServerUnreachable" = "Serwer jest obecnie nieosiągalny. Spróbuj ponownie później.";
+
+"Username" = "Nazwa użytkownika";
+"Password" = "Hasło";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" = "Token autoryzacji";
+"WorkOnline" = "Pracuj w trybie Online";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

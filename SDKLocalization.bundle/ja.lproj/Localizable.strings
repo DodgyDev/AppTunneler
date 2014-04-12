@@ -1,0 +1,195 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "不明なサーバーエラーが発生しました。管理者にお問い合わせください。";
+"InvalidCredentialsTitle" = "入力した資格情報を検証できません。再試行してください。";
+"UnknownTitle" = "不明";
+"UserCancelledOperation" = "ユーザーは接続を中止しました。";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "データサンプル転送失敗";
+"ConnectionFailureFormat" = "接続に失敗しました。ステータスコード　%d";
+"DataSamplerFailedTransmissionDescription" = "データサンプラーは転送失敗";
+"DataSamplerFailedTransmissionReason" = "データサンプラーは転送失敗";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "デバイスの状態を取得できませんでした。";
+"DeviceMustBeEnrolled" = "デバイスを加入する必要があります。";
+"DeviceCheckoutFailed" = "貸出に失敗しました";
+"ConnectionLostError" = "サーバーへの接続が切断しました。\n後ほど再試行してください。";
+"NetworkConnectionLost" = "ネットワーク接続がありません";
+"ConnectionUnavailable" = "接続が利用できません";
+"DeviceNotEnrolled" = "デバイスが加入していません";
+"ErrorTitle" = "エラー";
+"DeviceNonCompliant" = "デバイスが順守していません";
+"InvalidLocationGroup" = "無効なロケーショングループです";
+"DeviceAlreadyCheckedIn" = "デバイスはすでに返却されています";
+"DeviceAlreadyCheckedOut" = "デバイスはすでに貸出されています";
+"InvalidCheckOutRequest" = "無効な貸出要求です";
+"DeviceCanNotShared" = "デバイスは共有できません";
+"UnknownErrorMessage" = "不明なエラーが発生しました。管理者までお問い合わせください。";
+"UnknownError" = "不明なエラー";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "デバイスがこの環境に対応していません。サポートが必要な場合は貴社のシステム管理者にお問い合わせください。エラーコード: %d";
+"AWSDKInitializationError" = "サーバ接続中にエラーが発生しました。サポートが必要な場合は貴社のシステム管理者にお問い合わせください。エラーコード: %d";
+"AgentInitializationError" = "エラーが発生しました。デバイスを再加入してください。お困りの場合は貴社のシステム管理者までお問い合わせください。エラーコード%d";
+"CompatibilityVerifiedTitle" = "検証済みの互換性";
+"CompatibilityVerifiedMessage" = "サーバとの互換性が検証されています。";
+"NotEnrolledOrNotCompliant" = "デバイスが加入していないか、或いはこの環境に対応していません。貴社のIT管理者までお問い合わせください。";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AWComplianceの開始に失敗しました";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "URLの不正な要求";
+"RequestCauseServerConflict" = "要求がサーバー競合を起こしました";
+"InvalidSessionTokenError" = "無効なセッショントークンエラー";
+"ServerCommunicationError" = "サーバー通信エラー";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "AWデータサンプラー転送 転送失敗";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "AWデータサンプラー転送 転送失敗";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "無効な資格情報です。ログイン情報を確認し、再試行してください。";
+"InvalidActivationCodeErrorMessage" = "入力したグループIDは無効です。再試行してください。";
+"DeviceNotFoundErrorMessage" = "このデバイスはAirWatch環境で見つかりません。　ご加入の上、Secure Content Lockerをご利用ください。";
+"DeviceNotEnrolledErrorMessage" = "このデバイスはこのAirWatch環境に加入していません。　ご加入の上、Secure Content Lockerをご利用ください。";
+"DeviceMismatchErrorMessage" = "このデバイスはこのAirWatchユーザーアカウントで加入していません";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "%dという予期せぬステータスコードを受信しました。";
+"UnexpectedContentTypeFormat" = "%@のコンテンツタイプを予期しました、%@を受け取りました。";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "送信するデバイスログはありません";
+"NoCrashLogsToSend" = "送信するクラッシュログはありません";
+"EmptyLogFile" = "ログファイルは空です";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "構成されたレベル以上の重要度を持つエントリーがログに存在しません";
+"FailedToSendLogData" = "ログデータの送信失敗";
+"WiFiConnectionError" = "WiFiネットワークに接続するかシステム管理者までお問い合わせください";
+"NeedsWiFiToSendLogData" = "AWConsoleはログデータの送信にWiFi接続が必要です";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AWRestrictionの開始に失敗しました";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "サーバー証明書の暗号化エラー発生";
+"ServerCertificateNotTrustedError" = "信頼しないサーバー証明書";
+"SecureChannelHandshakeFailed" = "ハンドシェイク失敗";
+"FailedToGetToken" = "デバイスを貸出できませんでした。再試行するか管理者までお問い合わせください。";
+"FailedToInvalidateToken" = "トークンの無効化に失敗しました";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "フル充電";
+"UIDeviceBatteryStateChargingMessage" = "充電中";
+"UIDeviceBatteryStateUnpluggedMessage" = "接続なし";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "プロキシ構成がありません";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "サーバー構成プロパティが正しく設定され、有効なオブジェクトであることを確認してください";
+"ServerConfigurationPropertyHasNotBeenSet" = "サーバー構成プロパティが設定されていません";
+"ProxyConfigurationIsInvalid" = "プロキシ構成がありません";
+"CheckServerConfigurationTypeIsSet" = "サーバー構成タイプが設定されているか確認してください";
+"ServerConfigurationTypeIsUnknown" = "サーバー構成タイプが不明です";
+"FailedToRegisterWithNSURLProtocol" = "NSURLプロトコルにレジスターできませんでした";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "レジスターするクラスがNSURLプロトコルのサブクラスであるか確認してください";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "レジスターを行ったクラスはNSURLプロトコルのサブクラスではありません";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "署名要求に失敗しました";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "デバイスのMAG認証証明書が無効、あるいは存在しません。";
+"ProxyAuthenticationRequired" = "プロキシ認証必要";
+"InvalidAuthenticationForProxy" = "プロキシに提供した認証は無効です。";
+"CheckAuthenticationCredentialsAndTryAgain" = "認証資格情報を確認して再試行してください。";
+"MissingDeviceRootCertificate" = "デバイスルート証明書がありません";
+"AnActivationCode(LG)WasNeverSaved" = "グループIDは保存されていません";
+"FailedToGetPACscript" = "PACスクリプト取得に失敗しました";
+"SetAutoConfigURLProperty" = "自動構成URLプロパティを設定してください";
+"AutoConfigURLPropertyIsNotSet" = "自動構成URLプロパティが設定設定されていません";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "特定の自動構成URLに存在する有効なスクリプトを確認してください";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "自動構成URLから取得したデータのデコードに失敗しました。";
+"FailedToRetrievedAutoConfigUrlData" = "自動構成URLからデータを取得できませんでした";
+"MakeSurePACURLisValid" = "PAC URLが有効か確認してください";
+
+/********************** AWPasscode Handler ************/
+"Dismiss" = "キャンセル";
+"CurrentPassword" = "現在のパスコード";
+"NewPassword" = "新しいパスコード";
+"ReenterNewPassword" = "新しいパスコードを再入力";
+"Change" = "変更";
+"Cancel" = "キャンセル";
+"Enteryourpasscode:" = "パスコードを入力してください";
+"Passcode" = "パスコード";
+"Login" = "ログイン";
+"Notice" = "通知";
+"Passworddoesnotmatch" = "入力したパスワードは一致しません";
+"OK" = "OK";
+"Passworddonotcomplyrestriction" = "パスワードは基準を満たしていません";
+"MaximumPasscodeAttemptsMessage" = "間違ったパスコードの入力回数が最大に達しました。このデバイスの企業情報をワイプします";
+"AttemptsLeftMessage" = "残り %d回";
+"IncorrectPasscodeEntered" = "間違ったパスコードです";
+"BackOffMessage" = "アプリが無効になっています。%d秒後に再試行してください";
+"NonSimplePasscode" = "シンプルなパスコードは使用できません";
+"AlphanumericPasscodeRequired" = "パスコードは英数字ではありません";
+"NumericPasscodeRequired" = "パスコードは数字ではありません";
+"MimimumPasscodeLength" = "パスコードには最低%d文字使用してください。";
+"MimimumComplexCharacters" = "パスコードには最低%dつの特殊文字を使用してください。";
+"ExpiredPasscode" = "このパスコードは以前に使用されています。別のパスコードを使用してください。";
+"EnterYourPin" = "パスコードを作成";
+"PinCreationMessage" = "パスコードはアプリにログインする際に使用します";
+"CreatePin" = "パスコードを設定してください";
+"PasscodeDidntMatch" = "パスコードが一致しません。再入力してください。";
+"Continue" = "続行";
+"EnterAPin" = "暗証番号を入力してください";
+"Pin" = "暗証番号";
+"ConfirmPin" = "暗証番号を再入力";
+"ConfirmPasscode" = "パスコードを再入力";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed" = "オフラインアクセスは制限されています。リソースにアクセスするにはインターネットに接続してください。";
+"OfflineAccessDurationExceeded" = "オフラインアクセスのアクセス回数が最大に達しました。リソースにアクセスするにはインターネットに接続してください。";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage" = "すべての項目を入力し再試行してください。";
+"AuthenticatingTitle" = "認証中";
+"ErrorAlert" = "続行するにはAirWatchデバイスサービスURLが必要です";
+"DeviceNotEnrolledAlertMessage" = "このデバイスは現在加入していません。今すぐ加入しますか？";
+"ErrorAlertServerUnreachable" = "現在サーバーに接続できないようです。再試行してください。";
+
+"Username" = "ユーザー名";
+"Password" = "パスワード";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" = "認証トークン";
+"WorkOnline" = "オンライン作業";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

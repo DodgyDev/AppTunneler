@@ -1,0 +1,195 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "Vyskytla se neznámá chyba serveru. Prosím, kontaktujte Vašeho administrátora.";
+"InvalidCredentialsTitle" = "Dodané přihlašovací údaje nemohly být ověřeny. Prosím, zkuste znovu.";
+"UnknownTitle" = "Neznámé";
+"UserCancelledOperation" = "Uživatel zrušil připojení.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "Přenost DataSample selhal";
+"ConnectionFailureFormat" = "Spojení selhalo se stavovým kódem %d";
+"DataSamplerFailedTransmissionDescription" = "Přenos Data Sampler selhal";
+"DataSamplerFailedTransmissionReason" = "Přenos Data Sampler selhal";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Není možné načíst stav zařízení";
+"DeviceMustBeEnrolled" = "Zařízení musí být zaregistrováno";
+"DeviceCheckoutFailed" = "Odhlášení přístroje selhalo";
+"ConnectionLostError" = "Spojení se serverem bylo ztraceno. Prosím zkuste znovu později.";
+"NetworkConnectionLost" = "Síťové připojení ztraceno";
+"ConnectionUnavailable" = "Spojení není k dispozici";
+"DeviceNotEnrolled" = "Zařízení není zaregistrováno";
+"ErrorTitle" = "Chyba";
+"DeviceNonCompliant" = "Zařízení není konformní";
+"InvalidLocationGroup" = "Odhlašovací místní skupina musí být nižší než ta současná.";
+"DeviceAlreadyCheckedIn" = "Zařízení již bylo přihlášeno";
+"DeviceAlreadyCheckedOut" = "Zařízení již bylo odhlášeno";
+"InvalidCheckOutRequest" = "Neplatný požadavek na odhlášení";
+"DeviceCanNotShared" = "Zařízení nemůže být sdíleno";
+"UnknownErrorMessage" = "Objevila se neznámá chyba. Prosím, kontaktujte Vašeho administrátora";
+"UnknownError" = "Neznámá chyba";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Zařízení není kompatibilní s tímto prostředím. Kontaktujte Vašeho systémového administrátora pro další podporu. Kód chyby %d";
+"AWSDKInitializationError" = "Vyskytla se chyba. Prosím, přeregistrujte Vaše zařízení. Pokud potřebujete asistenci, kontaktujte Vaše systémového administrátora. Kód chyby %d";
+"AgentInitializationError" = "Vyskytla se chyba. Prosím, přeregistrujte Vaše zařízení. Pokud potřebujete asistenci, kontaktujte Vaše systémového administrátora. Kód chyby %d";
+"CompatibilityVerifiedTitle" = "Kompatibilita ověřena";
+"CompatibilityVerifiedMessage" = "Kompatibilita se serverem byla ověřena.";
+"NotEnrolledOrNotCompliant" = "Zařízení není zaregistrováno a není kompatibilní s tímto prostředím. Prosím kontaktujte Vašeho IT administrátora pro další asistenci.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AW konformita nebyla spuštěna";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Chybný požadavek - URL";
+"RequestCauseServerConflict" = "Požadavek způsobil konflikt serveru";
+"InvalidSessionTokenError" = "Chyba tokenu neplatné relace";
+"ServerCommunicationError" = "Chyba komunikace se serverem";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "Přenos AW Data Sampler vysílače selhal";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "Přenos AW Data Sampler vysílače selhal";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Neplatné přihlašovací údaje. Zkontrolujte Vaše přihlašovací údaje a zkuste znovu.";
+"InvalidActivationCodeErrorMessage" = "Dodané ID skupiny je neplatné. Prosím, zkuste znovu.";
+"DeviceNotFoundErrorMessage" = "Zařízení nebylo nalezeno na této AirWatch instanci. Prosím, zaregistrujte se před tím, než začnete používat Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "Zařízení nebylo registrováno na této AirWatch instanci. Prosím, zaregistrujte se před tím, než začnete používat Secure Content Locker.";
+"DeviceMismatchErrorMessage" = "Zařízení není zaregistrováno s tímto AirWatch uživatelským účtem.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "Obdržen neočekávaný stavový kód %d";
+"UnexpectedContentTypeFormat" = "Očekávaný obsah typu %@, dostal %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Žádné protokoly zařízení k odeslání";
+"NoCrashLogsToSend" = "Žádný protokol chyb k odeslání";
+"EmptyLogFile" = "Soubor protokolu je prázdný.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "Protokol neobsahuje žádné položky se závažností, která je větší nebo rovna konfigurované úrovni.";
+"FailedToSendLogData" = "Odeslání dat protokolu selhalo.";
+"WiFiConnectionError" = "Připojte se k WIFI síti, nebo kontaktujte Vašeho administrátora.";
+"NeedsWiFiToSendLogData" = "AW konzola vyžaduje WIFI spojení pro odeslání dat ptorokolu.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AW omezení nebyla spuštěna";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Chyba šifrování serverového certifikátu";
+"ServerCertificateNotTrustedError" = "Certifikát serveru není důvěryhodný";
+"SecureChannelHandshakeFailed" = "Handshake selhal";
+"FailedToGetToken" = "Není možné přihlásit zařízení. Prosím zkuste to znovu, nebo kontaktujte administrátora. ";
+"FailedToInvalidateToken" = "Znehodnocení tokenu selhalo.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Nabito";
+"UIDeviceBatteryStateChargingMessage" = "Probíhá nabíjení";
+"UIDeviceBatteryStateUnpluggedMessage" = "Nezapojeno";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "Proxy konfigurace chybí";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Ujistěte se, že vlastnosti konfigurace serveru byly nastaveny a jsou platným objektem";
+"ServerConfigurationPropertyHasNotBeenSet" = "Vlastnosti konfigurace serveru nebyly nastaveny";
+"ProxyConfigurationIsInvalid" = "Proxy konfigurace je neplatná";
+"CheckServerConfigurationTypeIsSet" = "Ujistěte se, že typ konfigurace serveru je nastaven";
+"ServerConfigurationTypeIsUnknown" = "Typ konfigurace serveru je neznámý";
+"FailedToRegisterWithNSURLProtocol" = "Registrace s NSURL protokolem selhala";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Ujistěte se, že třída, kterou registrujete, je podřazenou třídou NSURL protokolu";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "Třída, kterou jste se pokusili zaregistrovat, není podřazenou třídou NSURL protokolu";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Podepsání požadavku selhalo";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Na zařízení není uložen žádný MAG ověřovací certifikát, nebo je neplatný";
+"ProxyAuthenticationRequired" = "Proxy ověřování je vyžadováno";
+"InvalidAuthenticationForProxy" = "Ověřovaní poskytnuto pro proxy je neplatné. ";
+"CheckAuthenticationCredentialsAndTryAgain" = "Zkontrolujte ověřovací přihlašovací údaje a zkuste znovu. ";
+"MissingDeviceRootCertificate" = "Kořenový certifikát zařízení chybí";
+"AnActivationCode(LG)WasNeverSaved" = "ID skupiny nebylo nikdy uloženo.";
+"FailedToGetPACscript" = "Získání PAC skriptu selhalo.";
+"SetAutoConfigURLProperty" = "Nastavte vlastnosti automatické konfigurace URL.";
+"AutoConfigURLPropertyIsNotSet" = "Vlastnosti automatické konfigurace nejsou nastaveny.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Ujistěte se, že existuje platný skript uložený na \specifikovaném URL automatické konfigurace.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Data selhání dekódování získána z \url automatické konfigurace.";
+"FailedToRetrievedAutoConfigUrlData" = "Získání dat z url automatické konfigurace selhalo";
+"MakeSurePACURLisValid" = "Ujistěte se, že PAC URL je platné. ";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "Zrušit";
+"CurrentPassword" = "Aktuální heslo";
+"NewPassword"  = "Nové heslo";
+"ReenterNewPassword" = "Zadejte znovu nové heslo";
+"Change"            = "Změnit";
+"Cancel"            = "Zavřít";
+"Enteryourpasscode:" = "Prosím, zadejte Vaše heslo:";
+"Passcode"          = "Heslo";
+"Login"             = "Přihlášení";
+"Notice"            = "Upomínka";
+"Passworddoesnotmatch" = "Nové heslo, které jste zadali, se neshoduje.";
+"OK"                = "OK";
+"Passworddonotcomplyrestriction"  = "Vaše heslo není konformní s omezeními";
+"MaximumPasscodeAttemptsMessage" = "Dosáhli jste maximálního počtu nezdařených pokusů o zadání hesla. Na Vašem zařízení byl proveden firemní výmaz.";
+"AttemptsLeftMessage" = "Zbývá Vám %d pokusů";
+"IncorrectPasscodeEntered" = "Zadané heslo je nesprávné";
+"BackOffMessage"  = "Vaše aplikace je deaktivována. Zkuste znovu za %d vteřin";
+"NonSimplePasscode" =   "Vaše heslo nesmí být jednoduché.";
+"AlphanumericPasscodeRequired" = "Vaše heslo není alfanumerické.";
+"NumericPasscodeRequired" = "Vaše heslo není numerické.";
+"MimimumPasscodeLength"   = "Vaše heslo musí mít nejméně %d písmen.";
+"MimimumComplexCharacters"= "Vaše heslo musí mít nejméně %d komplexních znaků.";
+"ExpiredPasscode"         = "Toto heslo již bylo dříve použito. Prosím, zadejte jiné heslo.";
+"EnterYourPin"            = "Vytvořte heslo";
+"PinCreationMessage"      = "Toto heslo bude používáno pro přihlášení do aplikace.";
+"CreatePin"               = "Prosím, nastavte heslo";
+"PasscodeDidntMatch"      = "Hesla se neshodují, zadejte je znovu";
+"Continue"                = "Pokračovat";
+"EnterAPin"               = "Prosím, zadejte PIN";
+"Pin"                     = "PIN";
+"ConfirmPin"              = "Potvrdit PIN";
+"ConfirmPasscode"         = "Potvrďte heslo";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Offline přístup je zakázán. Pro přístup ke zdrojům se připojte k internetu.";
+"OfflineAccessDurationExceeded" = "Dosáhli jste maximálního počtu offline přístupů. Pro přístup ke zdrojům se připojte k internetu.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="Prosím, vyplňte všechna pole a zopakujte.";
+"AuthenticatingTitle" = "Ověřování";
+"ErrorAlert"="Please supply an AirWatch device services URL to continue.";
+"DeviceNotEnrolledAlertMessage"="Prosím, zadejte URL služeb AirWatch zařízení, abyste mohli pokračovat.";
+"ErrorAlertServerUnreachable"= "Server se zdá být právě nedostupný. Zkuste znovu později.";
+
+"Username"="Uživatelské jméno";
+"Password" = "Heslo";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="Ověřovací token";
+"WorkOnline" = "Pracovat Online";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

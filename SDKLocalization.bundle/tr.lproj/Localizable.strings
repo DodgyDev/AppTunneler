@@ -1,0 +1,196 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "Bilinmeyen bir sunucu hatası oluştu. Lütfen yöneticinizle iletişime geçin.";
+"InvalidCredentialsTitle" = "Verilen kimlik bilgileri doğrulanamadı. Lütfen tekrar deneyin.";
+"UnknownTitle" = "Bilinmeyen";
+"UserCancelledOperation" = "Kullanıcı bağlantıyı iptal etti.";
+"Ok" = "Tamam";
+"DataSampleFailedTransmitTitle" = "DataSample iletimde başarısız";
+"ConnectionFailureFormat" = "Bağlantı %d durum koduyla başarısız";
+"DataSamplerFailedTransmissionDescription" = "DataSampler İletimde Başarısız";
+"DataSamplerFailedTransmissionReason" = "Data Sampler İletimde Başarısız";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Aygıt durumu alınamıyor";
+"DeviceMustBeEnrolled" = "Aygıt kaydedilmelidir";
+"DeviceCheckoutFailed" = "Aygıtı Teslim Alma Başarısız";
+"ConnectionLostError" = "Sunucu ile bağlantı kaybedildi.\nLütfen daha sonra tekrar deneyin.";
+"NetworkConnectionLost" = "Ağ Bağlantısı Kaybedildi";
+"ConnectionUnavailable" = "Bağlantı Kullanılamıyor";
+"DeviceNotEnrolled" = "Aygıt kayıtlı değil";
+"ErrorTitle" = "Hata";
+"DeviceNonCompliant" = "Aygıt uyumlu değil";
+"InvalidLocationGroup" = "Organizasyon Grubu geçerli değil";
+"DeviceAlreadyCheckedIn" = "Aygıt zaten teslim edilmiş";
+"DeviceAlreadyCheckedOut" = "Aygıt zaten teslim alınmış";
+"InvalidCheckOutRequest" = "Geçersiz teslim alma talebi";
+"DeviceCanNotShared" = "Aygıt paylaşılamaz";
+"UnknownErrorMessage" = "Bilinmeyen bir hata oluştu. Lütfen yöneticinizle iletişime geçin.";
+"UnknownError" = "Bilinmeyen Hata";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Aygıt bu ortam ile uyumlu değil. Yardım için lütfen sistem yöneticinizle iletişime geçin. Hata Kodu %d";
+"AWSDKInitializationError" = "Bir hata oluştu. Lütfen aygıtınızı tekrar kaydedin. Yardım için lütfen sistem yöneticinizle iletişime geçin. Hata Kodu %d";
+"AgentInitializationError" = "Bir hata oluştu. Lütfen aygıtınızı yeniden kaydedin. Yardım için lütfen sistem yöneticinizle iletişime geçin. Hata Kodu %d";
+"CompatibilityVerifiedTitle" = "Uyumluluk Onaylandı";
+"CompatibilityVerifiedMessage" = "Sunucu ile uyumluluk onaylandı.";
+"NotEnrolledOrNotCompliant" = "Aygıt kayıtlı değil veya bu ortam ile uyumlu değil. Daha fazla yardım için lütfen IT yöneticiniz ile iletişime geçin.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AWCompliance başlatma başarısız";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Hatalı URL Talebi";
+"RequestCauseServerConflict" = "Talep Sunucu Çakışmasına Neden Oldu";
+"InvalidSessionTokenError" = "Hata Türü: Geçersiz Oturum Belirteci";
+"ServerCommunicationError" = "Sunucu İletişimi Hatası";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "AW Data Sampler Transmitter İletimde Başarısız";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "AW Data Sampler Transmitter İletimde Başarısız";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Geçersiz kimlik bilgileri. Lütfen oturum açma bilglierinizi ve grup kimliğinizi kontrol edin ve tekrar deneyin.";
+"InvalidActivationCodeErrorMessage" = "Verilen grup kimliği geçersiz. Lütfen tekrar deneyin.";
+"DeviceNotFoundErrorMessage" = "Aygıt bu AirWatch sunucusunda bulunamadı. Lütfen Secure Content Locker'ı kullanma girişiminden önce kayıt olun.";
+"DeviceNotEnrolledErrorMessage" = "Aygıt bu AirWatch sunucusunda kayıtlı değil. Lütfen Secure Content Locker'ı kullanma girişiminden önce kayıt olun.";
+"DeviceMismatchErrorMessage" = "Aygıt bu AirWatch kullanıcı hesabı ile kayıtlı değil.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "%d'nın beklenmeyen statü kodu alındı";
+"UnexpectedContentTypeFormat" = "Beklenen içerik türü %@, %@ aldı";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Gönderilecek aygıt günlüğü yok";
+"NoCrashLogsToSend" = "Gönderilecek çökme günlüğü yok";
+"EmptyLogFile" ="Günlük dosyası boş.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "Günlük, yapılandırma seviyesinden daha büyük veya eşit herhangi bir girişi kapsamıyor.";
+"FailedToSendLogData" = "Günlük verisi gönderimi başarısız.";
+"WiFiConnectionError" = "Bir WI-FI ağına bağlanın veya sistem yöneticinizle iletişime geçin.";
+"NeedsWiFiToSendLogData" ="AW Konsolu WI-FI bağlantısının günlük verisi göndermesini gerektiriyor.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AWRestrctions başlatma başarısız";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Sunucu sertifikası ile şifreleme hatası";
+"ServerCertificateNotTrustedError" = "Sunucu Sertifikası Güvenilir Değil";
+"SecureChannelHandshakeFailed" = "El Sıkışma Başarısız";
+"FailedToGetToken" = "Aygıtı teslim alma başarısız. Lütfen tekrar deneyin veya bir yönetici ile iletişime geçin.";
+"FailedToInvalidateToken" = "Belirteci geçersiz kılma başarısız.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Dolu";
+"UIDeviceBatteryStateChargingMessage" = "Şarj Ediyor";
+"UIDeviceBatteryStateUnpluggedMessage" = "Fiş Çıkarıldı";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "Proxy yapılandırma eksik";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Lütfen sunucu Yapılandırma özelliğinin ayarlanmış ve geçerli bir nesne olduğundan emin olunuz";
+"ServerConfigurationPropertyHasNotBeenSet" = "Sunucu Yapılandırma özelliği ayarlanmamış";
+"ProxyConfigurationIsInvalid" = "Proxy yapılandırma geçersiz";
+"CheckServerConfigurationTypeIsSet" = "Sunucu yapılandırma türünün kurulduğundan emin olunuz";
+"ServerConfigurationTypeIsUnknown" = "Sunucu yapılandırma türü bilinmiyor";
+"FailedToRegisterWithNSURLProtocol" = "NSURLProtocol ile kayıt başarısız";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Kaydetmekte olduğunuz sınıfın NSURLProtocol'ünün alt sınıfı olduğundan emin olunuz";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "Kaydetmeyi denediğiniz sınıf NSURLProtocol'ününün alt sınıfı değil.";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Talebi imzalama başarısız";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Aygıtta saklanan bir MAG kimlik doğrulama sertifikası bulunmuyor veya sertifika geçersiz.";
+"ProxyAuthenticationRequired" = "Proxy Kimlik Doğrulaması Gerekli.";
+"InvalidAuthenticationForProxy" = "Proxy için verilen kimlik doğrulaması geçersiz.";
+"CheckAuthenticationCredentialsAndTryAgain" = "Kimlik doğrulama bilgilerinizi kontrol edin ve tekrar deneyin.";
+"MissingDeviceRootCertificate" = "Aygıt Kök Sertifikası Eksik";
+"AnActivationCode(LG)WasNeverSaved" = "Bir Grup Kimliği Kaydedilmemiş.";
+"FailedToGetPACscript" = "PAC komut dosyası alımı başarısız.";
+"SetAutoConfigURLProperty" = "Otomatik yapılandırma URL'i özelliğini ayarlayın.";
+"AutoConfigURLPropertyIsNotSet" = "Otomatik yapılandırma URL'i özelliği ayarlanmamış.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Belirtilen otomatik yapılandırma URL'inde geçerli bir komut bulunduğundan emin olun.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Otomatik yapılandırma URL'inden alınan verileri çözme başarısız.";
+"FailedToRetrievedAutoConfigUrlData" = "Otomatik yapılandırma URL'inden veri alımı başarısız.";
+"MakeSurePACURLisValid" = "PAC URL'nin geçerli olduğundan emin olunuz.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "Artık Anımsatma";
+"CurrentPassword" = "Mevcut Parola";
+"NewPassword"  = "Yeni Parola";
+"ReenterNewPassword" = "Yeni parolayı tekrar girin";
+"Change"            = "Değiştir";
+"Cancel"            = "İptal Et";
+"Enteryourpasscode:" = "Lütfen şifrenizi girin:";
+"Passcode"          = "Şifre";
+"Login"             = "Oturum Aç";
+"Notice"            = "Uyarı";
+"Passworddoesnotmatch" = "Girdiğiniz yeni parola eşleşmiyor.";
+"OK"                = "Tamam";
+"Passworddonotcomplyrestriction"  = "Parolanız kısıtlamalarla uyumlu değil";
+"MaximumPasscodeAttemptsMessage" = "Maksimum sayıda hatalı şifre girdiniz. Şirket içeriği aygıtınızdan silindi.";
+"AttemptsLeftMessage" = " %d deneme hakkınız kaldı";
+"IncorrectPasscodeEntered" = "Girilen şifre yanlış";
+"BackOffMessage"  = "Uygulamanız devre dışı. %d saniye sonra tekrar deneyin";
+"NonSimplePasscode" =   "Şifreniz basit olamaz.";
+"AlphanumericPasscodeRequired" = "Şifreniz alfasayısal değil.";
+"NumericPasscodeRequired" = "Şifreniz sayısal değil";
+"MimimumPasscodeLength"   = "Şifreniz en az %d harf içermelidir.";
+"MimimumComplexCharacters"= "Şifreniz en az %d karmaşık karakter içermelidir.";
+"ExpiredPasscode"         = "Bu şifre daha önce kullanılmış. Lütfen farklı bir şifre girin.";
+"EnterYourPin"            = "Parola Oluştur";
+"PinCreationMessage"      = "Bu şifre uygulamada oturum açmak için kullanılacaktır.";
+"CreatePin"               = "Lütfen bir şifre ayarlayın";
+"PasscodeDidntMatch"      = "Şifreler eşleşmiyor, tekrar girin";
+"Continue"                = "Devam";
+"EnterAPin"               = "Lütfen bir pin girin";
+"Pin"                     = "Pin";
+"ConfirmPin"              = "Pin'i onayla";
+"ConfirmPasscode"         = "Şifreyi Onayla";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Çevrim dışı erişim kısıtlanmış. Kaynaklara erişmek için lütfen internete bağlanın.";
+"OfflineAccessDurationExceeded" = "Çevrim dışı erişim limitine ulaştınız. Kaynaklara erişmek için lütfen internete bağlanın.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="Lütfen tüm alanları doldurarak yeniden deneyin.";
+"AuthenticatingTitle" = "Kimlik Doğrulanıyor";
+"ErrorAlert"="Lütfen devam etmek için bir AirWatch aygıt hizmetleri URL'si giriniz.";
+"DeviceNotEnrolledAlertMessage"="Bu aygıt şu anda kayıtlı değil. Şimdi kaydetmek ister misiniz?";
+"ErrorAlertServerUnreachable"= "Şu anda sunucuya ulaşılamıyor. Daha sonra tekrar deneyin.";
+
+"Username" = "Kullanıcı Adı";
+"Password" = "Parola";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="Doğrulama Belirteci";
+"WorkOnline" = "Çevrim İçi Çalış";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";
+

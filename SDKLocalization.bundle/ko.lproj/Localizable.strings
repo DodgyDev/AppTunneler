@@ -1,0 +1,195 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "알 수 없는 서버 오류가 발생했습니다. 귀하의 관리자에게 문의하십시오.";
+"InvalidCredentialsTitle" = "제공된 정보가 증명되지 않았습니다. 다시 시도하십시오.";
+"UnknownTitle" = "알 수 없음";
+"UserCancelledOperation" = "사용자가 연결을 취소했습니다.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "데이터 샘플 전송 실패";
+"ConnectionFailureFormat" = "상태 코드 %d(으)로 연결 실패";
+"DataSamplerFailedTransmissionDescription" = "데이터 샘플러 전송 실패";
+"DataSamplerFailedTransmissionReason" = "데이터 샘플러 전송 실패";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "장치 상태를 찾아올 수 없습니다.";
+"DeviceMustBeEnrolled" = "장치는 등록돼야 합니다.";
+"DeviceCheckoutFailed" = "장치 체크아웃 실패함";
+"ConnectionLostError" = "서버에 연결이 끊어졌습니다. 나중에 다시 시도하십시오.";
+"NetworkConnectionLost" = "네트워크 연결 끊어짐";
+"ConnectionUnavailable" = "연결 사용할 수 없음";
+"DeviceNotEnrolled" = "장치가 등록되어 있지 않습니다.";
+"ErrorTitle" = "오류";
+"DeviceNonCompliant" = "장치가 호환되지 않습니다.";
+"InvalidLocationGroup" = "위치 그룹이 유효하지 않음";
+"DeviceAlreadyCheckedIn" = "장치 이미 체크인됨";
+"DeviceAlreadyCheckedOut" = "장치 이미 체크아웃됨";
+"InvalidCheckOutRequest" = "잘못된 체크아웃 요청";
+"DeviceCanNotShared" = "장치를 공유할 수 없습니다.";
+"UnknownErrorMessage" = "알 수 없는 오류가 발생했습니다. 귀하의 관리자에게 문의하십시오. ";
+"UnknownError" = "알 수 없는 오류";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "장치는 이 환경과 호환되지 않습니다. 도움이 더 필요하시면 귀하의 시스템 관리자에게 문의하십시오. 오류 코드 %d";
+"AWSDKInitializationError" = "서버에 연결하는 데 오류가 발생했습니다. 도움이 더 필요하시면 귀하의 시스템 관리자에게 문의하십시오. 오류 코드 %d";
+"AgentInitializationError" = "오류가 발생했습니다. 귀하의 장치를 다시 등록하십시오. 도움이 더 필요하시면 시스템 관리자에게 문의하십시오. 오류 코드 %d";
+"CompatibilityVerifiedTitle" = "호환성 확인됨";
+"CompatibilityVerifiedMessage" = "서버와의 호환성이 확인됨.";
+"NotEnrolledOrNotCompliant" = "장치가 등록되지 않았거나 이 환경과 호환되지 않습니다. 도움이 더 필요하시면 귀하의 IT 관리자에게 문의하십시오.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AWCompliance 시작하기 실패";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "잘못된 요청 URL";
+"RequestCauseServerConflict" = "요청이 서버 충돌을 일으킴";
+"InvalidSessionTokenError" = "잘못된 세션 토큰 오류";
+"ServerCommunicationError" = "서버 통신 오류";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "AW 데이터 샘플러 전송기가 전송을 실패";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "AW 데이터 샘플러 전송기가 전송을 실패";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "잘못된 자격 증명. 로그인 정보 및 그룹 Id를 확인하고 다시 시도하십시오.";
+"InvalidActivationCodeErrorMessage" = "제공된 그룹 ID가 잘못되었습니다. 다시 시도하십시오.";
+"DeviceNotFoundErrorMessage" = "장치를 이 AirWatch 인스턴스에서 찾을 수 없습니다. Secure Content Locker를 사용하기 전에 등록하시기 바랍니다.";
+"DeviceNotEnrolledErrorMessage" = "장치는 이 AirWatch 인스턴스에 등록되어있지 않습니다. Secure Content Locker를 사용하기 전에 등록하시기 바랍니다.";
+"DeviceMismatchErrorMessage" = "장치는 이 AirWatch 사용자 계정에 등록되어있지 않습니다.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "%d의 예상하지 못한 상태 코드를 받음";
+"UnexpectedContentTypeFormat" = "예상됐던 콘텐츠 유형 %@이 %@를(을) 받았습니다.";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "전송할 장치 로그가 없습니다.";
+"NoCrashLogsToSend" = "전송할 크래시 로그가 없습니다.";
+"EmptyLogFile" = "로그 파일이 비어 있습니다.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "로그는 구성된 레벨보다 크거나 같은 심각도의 항목을 가지고 있지 않습니다. ";
+"FailedToSendLogData" = "로그 데이터 전송 실패";
+"WiFiConnectionError" = "WIFI 네트워크에 연결하거나 귀하의 시스템 관리자에게 문의하십시오.";
+"NeedsWiFiToSendLogData" = "AWConsole은 로그 데이터를 전송하려면 WIFI 연결이 필요합니다. ";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AWRestrictions 시작하기 실패";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "서버 인증서와 암호화 오류";
+"ServerCertificateNotTrustedError" = "서버 인증서 신뢰할 수 없음";
+"SecureChannelHandshakeFailed" = "핸드셰이크 실패";
+"FailedToGetToken" = "장치 체크아웃할 수 없음. 다시 시도하거나 관리자에게 문의하십시오.";
+"FailedToInvalidateToken" = "토큰 무효화 실패.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "꽉 참";
+"UIDeviceBatteryStateChargingMessage" = "충전 중";
+"UIDeviceBatteryStateUnpluggedMessage" = "언플러그드";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "프록시 구성이 없습니다.";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "서버 구성 속성이 설정된 것과 올바른 개체인 것을 확인하십시오.";
+"ServerConfigurationPropertyHasNotBeenSet" = "서버 구성 속성이 설정되지 않았습니다.";
+"ProxyConfigurationIsInvalid" = "프록시 구성이 잘못되었습니다.";
+"CheckServerConfigurationTypeIsSet" = "서버 구성 유형이 설정되었는지 확인하십시오.";
+"ServerConfigurationTypeIsUnknown" = "서버 구성 유형을 알 수 없음";
+"FailedToRegisterWithNSURLProtocol" = "NSURLProtocol 레지스터 실패";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "귀하가 레지스터하는 클래스가 NSURLProtocol의 하위 클래스인지 확인하십시오.";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "귀하가 레지스터하려고 했던 클래스는 NSURLProtocol의 하위 클래스가 아닙니다.";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "요청 서명 실패";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "MAG 인증 인증서가 장치에 저장되어 있지 않거나 유효하지 않습니다.";
+"ProxyAuthenticationRequired" = "프록시 인증 필수.";
+"InvalidAuthenticationForProxy" = "프록시에 제공된 인증이 유효하지 않습니다.";
+"CheckAuthenticationCredentialsAndTryAgain" = "귀하의 인증 자격 증명을 확인하시고 다시 시도하십시오.";
+"MissingDeviceRootCertificate" = "장치 루트 인증서가 없음";
+"AnActivationCode(LG)WasNeverSaved" = "그룹 ID가 저장되지 않음";
+"FailedToGetPACscript" = "PAC 스크립트 가져오기 실패.";
+"SetAutoConfigURLProperty" = "자동 구성 URL 속성을 설정";
+"AutoConfigURLPropertyIsNotSet" = "자동 구성 URL 속성이 설정되지 않음.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "특정된 자동 구성 URL에 유효한 스크립트가 있는지 확인하십시오.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "자동 구성 URL에서 가져온 데이터의 디코드를 실패";
+"FailedToRetrievedAutoConfigUrlData" = "자동 구성 url에서 데이터 가져오기 실패.";
+"MakeSurePACURLisValid" = "PAC URL이 유효한지 확인하십시오.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss" = "해제";
+"CurrentPassword" = "현재 비밀번호";
+"NewPassword" = "새 비밀번호";
+"ReenterNewPassword" = "새 비밀번호 다시 입력";
+"Change" = "변경";
+"Cancel" = "취소";
+"Enteryourpasscode:" = "귀하의 암호를 입력:";
+"Passcode" = "암호";
+"Login" = "로그인";
+"Notice" = "알림";
+"Passworddoesnotmatch" = "입력하신 새 비밀번호가 일치하지 않습니다.";
+"OK" = "OK";
+"Passworddonotcomplyrestriction" = "귀하의 비밀번호는 제한을 준수하지 않습니다.";
+"MaximumPasscodeAttemptsMessage" = "귀하는 암호 시도 실패의 최대 갯수에 도달했습니다. 귀하의 장치가 엔터프라이즈 초기화됩니다.";
+"AttemptsLeftMessage" = "%d번의 시도가 남았습니다.";
+"IncorrectPasscodeEntered" = "입력하신 암호는 잘못되었습니다.";
+"BackOffMessage" = "귀하의 앱이 비활성화됨. %d초 후에 다시 시도하십시오.";
+"NonSimplePasscode" = "귀하의 암호는 간단할 수 없습니다.";
+"AlphanumericPasscodeRequired" = "귀하의 암호는 영숫자가 아닙니다.";
+"NumericPasscodeRequired" = "귀하의 암호는 숫자가 아닙니다.";
+"MimimumPasscodeLength" = "귀하의 암호는 최소한 %d개의 문자가 있어야 합니다.";
+"MimimumComplexCharacters" = "귀하의 암호는 최소한 %d개의 복잡한 문자가 있어야 합니다.";
+"ExpiredPasscode" = "이전에 사용된 암호입니다. 다른 암호를 입력하십시오.";
+"EnterYourPin" = "암호 만들기";
+"PinCreationMessage" = "이 암호는 앱에 로그인할 때 사용됩니다.";
+"CreatePin" = "암호를 설정하십시오.";
+"PasscodeDidntMatch" = "암호가 일치하지 않습니다. 다시 입력하십시오.";
+"Continue" = "계속";
+"EnterAPin" = "Pin을 입력하십시오.";
+"Pin" = "Pin";
+"ConfirmPin" = "Pin 확인";
+"ConfirmPasscode" = "암호 확인";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed" = "오프라인 액세스가 제한됨. 리소스를 액세스하려면 인터넷에 연결하십시오.";
+"OfflineAccessDurationExceeded" = "오프라인 액세스의 한도에 도달했습니다. 리소스를 액세스하려면 인터넷에 연결하십시오.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"= "모든 필드를 작성하시고 다시 시도하십시오.";
+"AuthenticatingTitle" = "인증 중";
+"ErrorAlert"="계속 하려면 AirWatch 장치 서비스 URL을 제공하십시오.";
+"DeviceNotEnrolledAlertMessage"="이 장치는 현재 등록이 안 되어있습니다. 지금 등록하시겠습니까?";
+"ErrorAlertServerUnreachable"= "지금은 서버에 연결할 수 없습니다. 나중에 다시 시도하십시오.";
+
+"Username"="아이디";
+"Password" = "비밀번호";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="인증 토큰";
+"WorkOnline" = "온라인 모드";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

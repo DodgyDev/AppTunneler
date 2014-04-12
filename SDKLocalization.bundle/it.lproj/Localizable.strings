@@ -1,0 +1,197 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" ="Si è verificato un errore sconosciuto nel server. Contatta il tuo amministratore.";
+"InvalidCredentialsTitle" = "Impossibile convalidare le credenziali fornite. Riprova.";
+"UnknownTitle" = "Sconosciuto";
+"UserCancelledOperation" = "L'utente ha annullato la connessione.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "Trasmissione DataSample non riuscita";
+"ConnectionFailureFormat" = "Connessione non riuscita, codice di stato %d";
+"DataSamplerFailedTransmissionDescription" = "Trasmissione DataSampler non riuscita";
+"DataSamplerFailedTransmissionReason" = "Trasmissione DataSampler non riuscita";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Impossibile recuperare stato dispositivo.";
+"DeviceMustBeEnrolled" = "È necessario registrare il dispositivo.";
+"DeviceCheckoutFailed" = "Check-out dispositivo non riuscito";
+"ConnectionLostError" = "Si è persa la connessione al server. Riprova più tardi.";
+"NetworkConnectionLost" = "Si è persa la connessione alla rete";
+"ConnectionUnavailable" = "Connessione non disponibile";
+"DeviceNotEnrolled" = "Il dispositivo non è registrato";
+"ErrorTitle" = "Errore";
+"DeviceNonCompliant" = "Il dispositivo non è conforme";
+"InvalidLocationGroup"  = "Il gruppo dal quale si esegue il check-out deve essere un sottogruppo del gruppo attuale.";
+"DeviceAlreadyCheckedIn" = "Il check-in del dispositivo è gia stato eseguito";
+"DeviceAlreadyCheckedOut" = "Il check-out del dispositivo è gia stato eseguito";
+"InvalidCheckOutRequest" = "Richiesta check-out non valida";
+"DeviceCanNotShared" = "Non è possibile condividere il dispositivo";
+"UnknownErrorMessage" = "Si è verificato un errore sconosciuto";
+"UnknownError" = "Errore sconosciuto";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Dispositivo non compatibile con questo ambiente. Per ulteriore assistenza, contatta l'amministratore di sistema. Codice errore %d";
+"AWSDKInitializationError" = "Si è verificato un errore. È necessario registrare il dispositivo nuovamente. Per ulteriore assistenza, contatta l’amministratore di sistema. Codice errore %d";
+"AgentInitializationError" = "Si è verificato un errore. È necessario registrare il dispositivo nuovamente. Per ulteriore assistenza, contatta l'amministratore di sistema. Codice errore %d";
+"CompatibilityVerifiedTitle" = "Compatibilità verificata";
+"CompatibilityVerifiedMessage" = "La compatibilità con il server è stata verificata.";
+"NotEnrolledOrNotCompliant" = "Il dispositivo non è registrato oppure non è compatibile con questo ambiente. Per ulteriore assistenza, contatta l'amministratore di sistema";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "Impossibile avviare AWCompliance";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Valore URL di richiesta non valido";
+"RequestCauseServerConflict" = "Conflitto server a causa della richiesta";
+"InvalidSessionTokenError" = "Errore di token sessione non valido";
+"ServerCommunicationError" = "Errore di comunicazione con server";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "Trasmissione AW DataSampler Transmitter non riuscita";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "Trasmissione AW DataSampler Transmitter non riuscita";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Credenziali non valide. Controlla le informazioni di accesso e riprova.";
+"InvalidActivationCodeErrorMessage" = "L'ID del gruppo fornito non è valido. Riprova.";
+"DeviceNotFoundErrorMessage" = "Il dispositivo non è stato trovato su questa istanza di AirWatch. È necessario registrare il dispositivo prima di provare ad usare il Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "Il dispositivo non è registrato a questa istanza di AirWatch. È necessario registrare il dispositivo prima di provare ad usare il Secure Content Locker.";
+"DeviceMismatchErrorMessage" = "Il dispositivo non è registrato con questo account utente di AirWatch.";
+
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "Codice di stato imprevisto di %d ricevuto";
+"UnexpectedContentTypeFormat"  = "Tipo contenuto previsto %@, ha ricevuto %@";
+
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Nessun registro dispositivo da inviare";
+"NoCrashLogsToSend" = "Nessun registro di arresto anomalo da inviare";
+"EmptyLogFile" = "File registro vuoto.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "Il registro non contiene alcuna voce corrispondente a una gravità superiore o uguale al livello configurato.";
+"FailedToSendLogData" = "Invio dati registro non riuscito.";
+"WiFiConnectionError" = "Connetti il dispositivo ad una rete WiFi oppure contatta il tuo amministratore di sistema.";
+"NeedsWiFiToSendLogData" = "AWConsole richiede una connessione WiFi per inviare dati del registro.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "Impossibile avviare AWRestrictions";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Errore di crittografia con il certificato server";
+"ServerCertificateNotTrustedError" = "Certificato server non attendibile";
+"SecureChannelHandshakeFailed"  = "Handshake non riuscito";
+"FailedToGetToken"  = "Impossibile eseguire check-out dispositivo. Riprova o contatta un amministratore.";
+"FailedToInvalidateToken" = "Impossibile invalidare token.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Ricaricata";
+"UIDeviceBatteryStateChargingMessage" = "In carica";
+"UIDeviceBatteryStateUnpluggedMessage" = "Non collegata";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "La configurazione proxy è mancante.";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Verifica che la proprietà di configurazione server sia sata impostata e costituisca un oggetto valido.";
+"ServerConfigurationPropertyHasNotBeenSet" = "La proprietà di configurazione server non è stata impostata.";
+"ProxyConfigurationIsInvalid" = "La configurazione proxy non è valida.";
+"CheckServerConfigurationTypeIsSet" = "Verifica che la configurazione server sia stata impostata.";
+"ServerConfigurationTypeIsUnknown" = "Il tipo di configurazione server è sconosciuto";
+"FailedToRegisterWithNSURLProtocol" = "Registrazione a NSURLProtocol non riuscita";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Verifica che la classe in attessa della registrazione sia una sottoclasse di NSURLProtocol";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "La classe in attesa della registrazione non è una sottoclasse di NSURLProtocol";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Impossibile firmare richiesta";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "È possibile che il certificato di autorizzazione MAG non sia archiviato sul dispositivo o che non sia valido";
+"ProxyAuthenticationRequired" = "Autenticazione proxy richiesta.";
+"InvalidAuthenticationForProxy" = "L'autenticazione fornita alla proxy non è valida.";
+"CheckAuthenticationCredentialsAndTryAgain" = "Controlla le credenziali di autenticazione e riprova.";
+"MissingDeviceRootCertificate" = "Certificato radice sul dispositivo mancante";
+"AnActivationCode(LG)WasNeverSaved" = "Nessun codice di attivazione (LG) è stato mai salvato.";
+"FailedToGetPACscript" = "Recupero script PAC non riuscito.";
+"SetAutoConfigURLProperty" = "Imposta la proprietà autoConfigURL.";
+"AutoConfigURLPropertyIsNotSet" = "La proprietà autoConfigURL non è stata impostata.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Verifica la presenza di un valido script nell'URL di autoconfigurazione specificato";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Decodifica dati recuperati dall'URL di autoconfigurazione non riuscita.";
+"FailedToRetrievedAutoConfigUrlData" = "Recupero dati dall'URL di autoconfigurazione non riuscito.";
+"MakeSurePACURLisValid" = "Verifica che l'URL PAC sia valido.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "Ignora";
+"CurrentPassword" = "Password attuale";
+"NewPassword"  = "Nuova password";
+"ReenterNewPassword" = "Reinserisci la nuova password";
+"Change"            = "Modifica";
+"Cancel"            = "Annulla";
+"Enteryourpasscode:" = "Inserisci il codice d'accesso:";
+"Passcode"          = "Codice d'accesso";
+"Login"             = "Accedi";
+"Notice"            = "Avviso";
+"Passworddoesnotmatch" = "La nuova password inserita non corrisponde.";
+"OK"                = "OK";
+"Passworddonotcomplyrestriction"  = "La password non è conforme alle restrizioni.";
+"MaximumPasscodeAttemptsMessage" = "È stato raggiunto il numero massimo consentito di tentativi di inserimento codice d'accesso non riusciti. Tutti i dati aziendali verranno eliminiati dal dispositivo.";
+"AttemptsLeftMessage" = "%d tentativi rimanenti";
+"IncorrectPasscodeEntered" = "Codice d'accesso inserito non è valido";
+"BackOffMessage"  = "La tua app è stata disattivata. Riprova tra %d secondi";
+"NonSimplePasscode" =   "Codice d'accesso semplice non consentito";
+"AlphanumericPasscodeRequired" = "Il tuo codice d'accesso non è compreso da caratteri alfanumerici";
+"NumericPasscodeRequired" = "Il tuo codice d'accesso non è compreso da caratteri numerici";
+"MimimumPasscodeLength"   = "Il tuo codice d'accesso deve contenere almeno %d lettere.";
+"MimimumComplexCharacters"= "Il tuo codice d'accesso deve contenere almeno %d caratteri complessi.";
+"ExpiredPasscode"         = "Questo codice d'accesso è già stato utilizzato. È necessario inserire un codice d'accesso diverso.";
+"EnterYourPin"            = "Crea un codice d'accesso";
+"PinCreationMessage"      = "Questo codice d'accesso verrà utilizzato per accedere all'applicazione.";
+"CreatePin"               = "È necessario impostare un codice d'accesso";
+"PasscodeDidntMatch"      = "Codici d'accesso non corrispondono. Riprova.";
+"Continue"                = "Continua";
+"EnterAPin"               = "È necessario inserire un PIN";
+"Pin"                     = "PIN";
+"ConfirmPin"              = "Conferma PIN";
+"ConfirmPasscode"         = "Conferma codice d'accesso";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Accesso in modalità offline limitato. Connettiti a Internet per accedere alle tue risorse.";
+"OfflineAccessDurationExceeded" = "È stato raggiunto il numero massimo consentito di accessi in modalità offline. Connettiti a Internet per accedere alle tue risorse.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="Completa tutti i campi e riprova.";
+"AuthenticatingTitle" = "Autenticazione in corso";
+"ErrorAlert"="È necessario fornire un URL dei servizi dispositivi AirWatch per continuare.";
+"DeviceNotEnrolledAlertMessage"="Questo dispositivo non è attualmente registrato. Vuoi registrarlo ora?";
+"ErrorAlertServerUnreachable"= "Impossibile contattare server. Riprova più tardi.";
+
+"Username"="Nome utente";
+"Password" = "Password";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="Token autorizzazione";
+"WorkOnline" = "Lavora online";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

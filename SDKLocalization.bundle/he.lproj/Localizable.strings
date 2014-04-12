@@ -1,0 +1,188 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" ="TODO:UnknownServerErrorMessage";
+"InvalidCredentialsTitle" = "TODO:InvalidCredentialsTitle";
+"UnknownTitle" = "לא ידועה";
+"UserCancelledOperation" = "משתמש ביטל את החיבור";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "TODO:DataSampleFailedTransmitTitle";
+"ConnectionFailureFormat" = "%d חיבור נכשל עם קוד מצב";
+"DataSamplerFailedTransmissionDescription" = "TODO:DataSamplerFailedTransmissionDescription";
+"DataSamplerFailedTransmissionReason" = "TODO:DataSamplerFailedTransmissionReason";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "TODO:Unable to retrieve device status";
+"DeviceMustBeEnrolled" = "TODO:The device must be enrolled";
+"DeviceCheckoutFailed" = "TODO:Device Checkout Failed";
+"ConnectionLostError" = "TODO:The connection to the server was lost.\nTry again later.";
+"NetworkConnectionLost" = "TODO:Network Connection Lost";
+"ConnectionUnavailable" = "TODO:Connection Unavailable";
+"DeviceNotEnrolled" = "TODO:Device is not enrolled";
+"ErrorTitle" = "TODO:Error";
+"DeviceNonCompliant" = "TODO:Device is not compliant";
+"InvalidLocationGroup"  = "TODO:Location group is not valid";
+"DeviceAlreadyCheckedIn" = "TODO:Device already checked in";
+"DeviceAlreadyCheckedOut" = "TODO:Device already checked out";
+"InvalidCheckOutRequest" = "TODO:Invalid checkout request";
+"DeviceCanNotShared" = "TODO:Device cannot be shared";
+"UnknownErrorMessage" = "TODO:An unknown error has occurred. Please contact your administrator";
+"UnknownError" = "TODO:Unknown Error";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "TODO:Office365NavBarTitle";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "TODO:AWCompliance failed to start";
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "TODO:Bad Request URL";
+"RequestCauseServerConflict" = "TODO:Request Cause Server Conflict";
+"InvalidSessionTokenError" = "TODO:Invalid Session Token Error";
+"ServerCommunicationError" = "TODO:Server Communication Error";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "TODO:AWDataSamplerTransmitterFailedTransmissionDescription";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "TODO:AWDataSamplerTransmitterFailedTransmissionReason";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "TODO:InvalidCredentialsErrorTitle";
+"InvalidActivationCodeErrorMessage" = "TODO:The supplied group ID is invalid. Please retry.";
+"DeviceNotFoundErrorMessage" = "TODO:The device was not found on this AirWatch instance. Please enroll before attempting to use the Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "TODO:The device is not enrolled on this AirWatch instance. Please enroll before attempting to use the Secure Content Locker.";
+"DeviceMismatchErrorMessage" = "TODO:The device is not enrolled with this AirWatch user account.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "ל קוד מצב בלתי צפוי של";
+"UnexpectedContentTypeFormat"  = "סוג התוכן קיבל";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "TODO:There are no device logs to send";
+"NoCrashLogsToSend" = "TODO:There are no crash logs to send";
+"EmptyLogFile" ="TODO:Log file is empty.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "TODO:The log contains no entry with a severity greater than or equal to the configured level.";
+"FailedToSendLogData" = "TODO:Failed to send log data.";
+"WiFiConnectionError" = "TODO:Connect to a WIFI network, or contact your system administrator.";
+"NeedsWiFiToSendLogData" = "TODO:The AWConsole requires WIFI connection to send log data.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "TODO:AWRestrictions failed to start";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "TODO:SecureChannelServerCertErrа";
+"ServerCertificateNotTrustedError" = "TODO:ServerCertificateNotTrustedError";
+"SecureChannelHandshakeFailed"  = "TODO:SecureChannelHandshakeFailedн";
+"FailedToGetToken"  = "TODO:Failed to get a token.";
+"FailedToInvalidateToken" = "TODO:Failed to invalidate token.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "TODO:UIDeviceBatteryStateFullMessage";
+"UIDeviceBatteryStateChargingMessage" = "TODO:UIDeviceBatteryStateFullMessage";
+"UIDeviceBatteryStateUnpluggedMessage" = "TODO:UIDeviceBatteryStateUnpluggedMessage";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "TODO:The Proxy configuration is missing";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "TODO:Make sure the serverConfiguration property has been set and is a valid object";
+"ServerConfigurationPropertyHasNotBeenSet" = "TODO:The serverConfiguration property has not been set";
+"ProxyConfigurationIsInvalid" = "TODO:The Proxy configuration is invalid";
+"CheckServerConfigurationTypeIsSet" = "TODO:Make sure the server configuration type is set";
+"ServerConfigurationTypeIsUnknown" = "TODO:The server configuration type is unknown";
+"FailedToRegisterWithNSURLProtocol" = "TODO:Failed to register with NSURLProtocol";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "TODO:Make sure the class you're registering is a subclass of NSURLProtocol";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "TODO:The class you attempted to register is not a subclass of NSURLProtocol";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "TODO:Failed to sign request";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "TODO:There is no MAG auth cert stored on the device, or it is invalid";
+"ProxyAuthenticationRequired" = "TODO:Proxy Authentication Required.";
+"InvalidAuthenticationForProxy" = "TODO:The authentication provided to the proxy is invalid.";
+"CheckAuthenticationCredentialsAndTryAgain" = "TODO:Check your authentication credentials and try again.";
+"MissingDeviceRootCertificate" = "TODO:Missing Device Root Certificate";
+"AnActivationCode(LG)WasNeverSaved" = "TODO:An ActivationCode (LG) was never saved.";
+"FailedToGetPACscript" = "TODO:Failed to get PAC script.";
+"SetAutoConfigURLProperty" = "TODO:Set the autoConfigURL property.";
+"AutoConfigURLPropertyIsNotSet" = "TODO:The autoConfigURL property isn't set.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "TODO:Make sure there is a valid script located at \
+the specified auto config URL.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "TODO:Failed to decode the data retrieved from the \
+auto config url.";
+"FailedToRetrievedAutoConfigUrlData" = "TODO:Failed to retrieve data from auto config url.";
+"MakeSurePACURLisValid" = "TODO:Make sure PAC URL is valid.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "TODO:Dismiss";
+"CurrentPassword" = "TODO:Current Password";
+"NewPassword"  = "TODO:New Password";
+"ReenterNewPassword" = "TODO: Re-enter New Passcode";
+"Change"            = "TODO:Change";
+"Cancel"            = "TODO:Cancel";
+"Enteryourpasscode:" = "TODO:Please enter your passcode:";
+"Passcode"          = "TODO: Passcode";
+"Login"             = "TODO: Login";
+"Notice"            = "TODO: Notice";
+"Passworddoesnotmatch" = "TODO: The new password you entered does not match.";
+"OK"                = "TODO: OK";
+"Passworddonotcomplyrestriction"  = "TODO: Your password do not comply with the restriction";
+"MaximumPasscodeAttemptsMessage" = "TODO: You have reached maximum passcode failed attempts. Your device is enterprise wiped.";
+"AttemptsLeftMessage" = "TODO: You have %d attempts left";
+"IncorrectPasscodeEntered" = "TODO: Passcode entered is incorrect";
+"BackOffMessage"  = "TODO: Your app is disabled. Try again in %d seconds";
+"NonSimplePasscode" =   "TODO: Your passcode cannot be simple.";
+"AlphanumericPasscodeRequired" = "TODO: Your passcode is not alphanumeric.";
+"NumericPasscodeRequired" = "TODO: Your passcode is not numeric";
+"MimimumPasscodeLength"   = "TODO: Your passcode should have at least %d letters.";
+"MimimumComplexCharacters"= "TODO: Your passcode should have at least %d complex characters.";
+"ExpiredPasscode"         = "TODO: This passcode was used before. Please enter a different passcode.";
+"EnterYourPin"            = "TODO: Create a Passcode";
+"PinCreationMessage"      = "TODO: This passcode will be used to log into the app.";
+"CreatePin"               = "TODO: Please set a passcode";
+"PasscodeDidntMatch"      = "TODO: Passcode didn't match, Re-enter them again";
+"Continue"                = "TODO: Continue";
+"EnterAPin"               = "TODO: Please enter a pin";
+"Pin"                     = "TODO: Pin";
+"ConfirmPin"              = "TODO: Confirm Pin";
+"ConfirmPasscode"         = "TODO: Confirm Passcode";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "TODO: Offline access is restricted. Please connect to the internet to access resources.";
+"OfflineAccessDurationExceeded" = "TODO: You have reached limit of offline access. Please connect to the internet to access resources.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="אנא מלא את כל השדות ונסה שוב";
+"AuthenticatingTitle" = "מבצע אימות";
+"ErrorAlert"="כדי להמשיך AirWatch נא ספק כתובת אתר משורותי המכשיר של";
+"DeviceNotEnrolledAlertMessage"="מכשיר זה כרגע לא רשום. האם ברצונך לרשום אותו עכשיו";
+"ErrorAlertServerUnreachable"= "השרת כרגע אינו זמין. נסה שוב מאוחר יותר";
+
+"Username"="שם משתמש";
+"Password" = "סיסמה";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="אסימון אישור";
+"WorkOnline" = "עבוד במצב מקוון";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

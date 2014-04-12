@@ -295,6 +295,7 @@
 
 //Load URL with address parameter, will set _address to input parameter
 -(void)LoadURLWithAddress:(NSString *)url{
+    [self.WebView setUserInteractionEnabled:YES];
     _Address = url;
     _authed = 0;
     [self LoadURL];

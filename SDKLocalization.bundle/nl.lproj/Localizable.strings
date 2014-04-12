@@ -1,0 +1,193 @@
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" = "Een onbekende serverfout heeft zich voorgedaan. Gelieve uw beheerder te contacteren..";
+"InvalidCredentialsTitle" = "De gegeven aanmeldgegevens konden niet gevalideerd worden. Gelieve opnieuw te proberen.";
+"UnknownTitle" = "Onbekend";
+"UserCancelledOperation" = "De gebruiker heeft de verbinding geannuleerd.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "Verzenden van gegevensuitstreksel mislukt";
+"ConnectionFailureFormat" = "Verbinding mislukt met statuscode %d";
+"DataSamplerFailedTransmissionDescription" = "Indiening van gegevensuittreksel mislukt ";
+"DataSamplerFailedTransmissionReason" = "Indiening van gegevensuittreksel mislukt ";
+"ErrorAuthenticating" = "TODO:Error in Authenticating";
+"LoginMessage" ="TODO : Login before trying again";
+"EndpointUnavailable" = "TODO: This request is unavailable on your current console version.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Niet mogelijk om de status van het toestel op te halen ";
+"DeviceMustBeEnrolled" = "Het toestel moet ingeschreven zijn";
+"DeviceCheckoutFailed" = "Toestel uitchecken mislukt";
+"ConnectionLostError" = "De netwerkverbinding met de server is verloren.\nProbeer het later weer.";
+"NetworkConnectionLost" = "Netwerkverbinding verloren";
+"ConnectionUnavailable" = "Verbinding niet beschikbaar";
+"DeviceNotEnrolled" = "Toestel is niet ingeschreven";
+"ErrorTitle" = "Fout";
+"DeviceNonCompliant" = "Toestel is niet compatibel";
+"InvalidLocationGroup" = "Locatiegroep is ongeldig";
+"DeviceAlreadyCheckedIn" = "Toestel is al ingeschreven ";
+"DeviceAlreadyCheckedOut" = "Toestel is al uitgecheckt";
+"InvalidCheckOutRequest" = "Ongeldige aanvraag voor uitchecken";
+"DeviceCanNotShared" = "Toestel kan niet worden gedeeld";
+"UnknownErrorMessage" = "Een onbekende fout heeft zich voorgedaan. Gelieve uw beheerder te contacteren..";
+"UnknownError" = "Onbekende fout";
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Toestel is niet compatibel met de omgeving. Gelieve contact op te nemen met uw IT-beheerder voor verdere hulp. Fout code %d";
+"AWSDKInitializationError" = "Fout bij het verbinden met de server. Gelieve contact op te nemen met uw systeembeheerder voor verdere hulp. Error Code %d";
+"AWSDKInitializationError" = "Er is een fout opgetreden. Gelieve uw toestel opnieuw inschrijven. Als u verder hulp nodig hebt, neem contact op met uw beheerder. Fout code %d";
+"CompatibilityVerifiedTitle" = "Compatibiliteit geverifieerd";
+"CompatibilityVerifiedMessage" = "Compatibiliteit met de server geverifieerd.";
+"NotEnrolledOrNotCompliant" = "Toestel is niet ingeschreven of is niet compatibel met de omgeving. Gelieve contact op te nemen met uw IT-beheerder voor verdere hulp.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AWCompliance kan niet worden gestart";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Slechte URL aanvraag";
+"RequestCauseServerConflict" = "Verzoek de oorzaak van de server conflict";
+"InvalidSessionTokenError" = "Fout voor ongeldige sessie token";
+"ServerCommunicationError" = "Communicatiefout met de server";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+"AWDataSamplerTransmitterFailedTransmissionDescription" = "Indiening van AW gegevensuittreksel mislukt ";
+"AWDataSamplerTransmitterFailedTransmissionReason" = "Indiening van AW gegevensuittreksel mislukt ";
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Ongeldige aanmeldgegevens. Gelieve uw inloginformatie te controleren en probeer opnieuw.";
+"InvalidActivationCodeErrorMessage" = "De gegeven groep-ID is ongeldig. Gelieve opnieuw te proberen.";
+"DeviceNotFoundErrorMessage" = "Het toestel werd niet gevonden op deze AirWatch-server. Gelieve in te schrijven voor u de Secure Content Locker probeert te gebruiken.";
+"DeviceNotEnrolledErrorMessage" = "Het toestel is niet ingeschreven op deze AirWatch-instantie. Gelieve in te schrijven voor u de Secure Content Locker probeert te gebruiken.";
+"DeviceMismatchErrorMessage" = "Het toestel is niet ingeschreven met deze AirWatch-gebruikersaccount.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "Onverwachte statuscode van %d ontvangen";
+"UnexpectedContentTypeFormat" = "Soort verwachte inhoud %@, %@ ontvangen";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Er zijn geen toestel logs om te verzenden";
+"NoCrashLogsToSend" = "Er zijn geen crash logs om te verzenden";
+"EmptyLogFile" = "Logbestand is leeg";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel" = "Het logboek bevat geen vermelding met een ernst groter dan of gelijk aan het geconfigureerde niveau.";
+"FailedToSendLogData" = "Log gegevens verzenden is mislukt";
+"WiFiConnectionError" = "Met een wifi netwerk verbinden, of uw systeem beheerder contacteren.";
+"NeedsWiFiToSendLogData" = "De AWConsole vereist een wifi verbinding om loggegevens te verzenden.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AWRestrictions kan niet worden gestart";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Encryptiefout met servercertificaat";
+"ServerCertificateNotTrustedError" = "Server certificaat niet vertrouwd";
+"SecureChannelHandshakeFailed" = "Handshake mislukt ";
+"FailedToGetToken" = "Onmogelijk om het toestel uit te checken. Gelieve uw beheerder te contacteren..";
+"FailedToInvalidateToken" = "Token ongeldig maken is mislukt.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Vol";
+"UIDeviceBatteryStateChargingMessage" = "Laden";
+"UIDeviceBatteryStateUnpluggedMessage" = "Niet aangesloten";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "De Proxy configuratie ontbreekt";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Zorg ervoor dat de eigenschap van de serverconfiguratie is ingesteld en een geldig object is";
+"ServerConfigurationPropertyHasNotBeenSet" = "De eigenschap van de serverconfiguratie is niet ingesteld";
+"ProxyConfigurationIsInvalid" = "De Proxy configuratie is ongeldig";
+"CheckServerConfigurationTypeIsSet" = "Zorg ervoor dat het serverconfiguratie-type is ingesteld";
+"ServerConfigurationTypeIsUnknown" = "Het serverconfiguratie-type is onbekend";
+"FailedToRegisterWithNSURLProtocol" = "Kan niet bij NSURLProtocol registreren";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Zorg ervoor dat de klasse die u registreerd een subklasse van NSURLProtocol is";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "De klasse die u geprobeerd heeft om te registreren is geen een subklasse van NSURLProtocol";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Mislukt om het verzoek te ondertekenen";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Er is geen auth cert MAG op het toestel opgeslagen, of het is ongeldig";
+"ProxyAuthenticationRequired" = "Proxy verificatie vereist.";
+"InvalidAuthenticationForProxy" = "De verificatie die aan de proxy is gegeven is ongeldig";
+"CheckAuthenticationCredentialsAndTryAgain" = "Controleer uw aanmeldingsgegevens en probeer opnieuw.";
+"MissingDeviceRootCertificate" = "Hoofdmap certificaat van het toestel ontbreekt";
+"AnActivationCode(LG)WasNeverSaved" = "Een activatiecode (OG) werd nooit opgeslagen.";
+"FailedToGetPACscript" = "Mislukt PAC script te krijgen.";
+"SetAutoConfigURLProperty" = "De automatische configuratie URL eigenschap instellen.";
+"AutoConfigURLPropertyIsNotSet" = "De automatische configuratie URL eigenschap is niet ingesteld.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Zorg ervoor dat een er een geldig script bij \de opgegeven autoConfigURL is";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "De gegevens van de ontvangen autoConfigURL \decoderen is mislukt";
+"FailedToRetrievedAutoConfigUrlData" = "De gegevens ontvangen van autoConfigURL is mislukt.";
+"MakeSurePACURLisValid" = "Zorg ervoor dat de PAC URL geldig is. ";
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "Dismiss";
+"CurrentPassword" = "Huidig wachtwoord";
+"NewPassword"  = "Nieuw wachtwoord";
+"ReenterNewPassword" = "Opnieuw in nieuwe pascode";
+"Change"            = "Verander";
+"Cancel"            = "Annuleer";
+"Enteryourpasscode:" = "Voer uw wachtwoord in:";
+"Passcode"          = "Wachtwoord";
+"Login"             = "Inloggen";
+"Notice"            = "Bericht";
+"Passworddoesnotmatch" = "Het nieuwe wachtwoord dat u hebt ingevoerd komt niet overeen.";
+"OK"                = "OK";
+"Passworddonotcomplyrestriction"  = "Uw wachtwoord voldoet niet aan de beperking";
+"MaximumPasscodeAttemptsMessage" = "U hebt het maximaal aantal mislukte wachtwoordpogingen bereikt. Alle bedrijfsgegevens zijn van uw toestel gewist.";
+"AttemptsLeftMessage" = "U hebts %d pogingen over";
+"IncorrectPasscodeEntered" = "Ingevoerde wachtwoord is onjuist";
+"BackOffMessage"  = "Uw applicatie is uitgeschakeld. Probeer het nogmaals over %d seconden";
+"NonSimplePasscode" =   "Uw wachtwoord kan niet eenvoudig zijn.";
+"AlphanumericPasscodeRequired" = "Uw wachtwoord is niet alfanumeriek.";
+"NumericPasscodeRequired" = "Uw wachtwoord is niet numeriek";
+"MimimumPasscodeLength"   = "Uw wachtwoord moet tenminste %d letters bevatten.";
+"MimimumComplexCharacters"= "Uw wachtwoord moet ten minstet %d complexe karakters bevatten.";
+"ExpiredPasscode"         = "Dit wachtwoord werd eerder gebruikt. Gelieve een ander wachtwoord invoeren.";
+"EnterYourPin"            = "Passcode creëren";
+"PinCreationMessage"      = "Deze zal worden gebruikt in te loggen in de applicatie.";
+"CreatePin"               = "Stel dan een passcode";
+"PasscodeDidntMatch"      = "Wachtwoord komt niet overeen, opnieuw invoeren";
+"Continue"                = "Doorgaan";
+"EnterAPin"               = "Gelieve een pin invoeren";
+"Pin"                     = "Pin";
+"ConfirmPin"              = "Bevestig pin";
+"ConfirmPasscode"         = "Bevestig pascode";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Offline toegang is beperkt. Maak verbinding met het internet voor toegang tot hulpmiddelen.";
+"OfflineAccessDurationExceeded" = "U heeft het limiet van offline toegang bereikt. Maak verbinding met het internet voor toegang tot hulpmiddelen.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "TODO:There are no profiles available for republishing.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage" = "Gelieve alle velden in te vullen en probeer opnieuw.";
+"AuthenticatingTitle" = "Verifiëren";
+"ErrorAlert" = "Gelieve een URL voor AirWatch-toestelservices te geven om verder te gaan.";
+"DeviceNotEnrolledAlertMessage" = "Dit toestel is momenteel niet ingeschreven. Zou u dit nu willen inschrijven?";
+"ErrorAlertServerUnreachable" = "De server lijkt nu onbereikbaar te zijn. Gelieve later opnieuw te proberen.";
+
+"Username" = "Gebruikersnaam";
+"Password" = "Wachtwoord";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" = "Autorisatietoken";
+"WorkOnline" = "Online werken";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "TODO:Your passcode should:";
+"NumericPasscodeLengthInstruction" = "TODO:\n - have at least (%d) numbers";
+"DontAllowSimpleNumericPasscodeInstrution" = "TODO:\n - not be repeating/ascending/descending";
+"AlphaNumericPasscodeLengthInstruction" = "TODO:\n - be at least (%d) characters long";
+"AlphaNumericSimplePasscodeInstrution" = "TODO:\n - have at least (1) number and (1) letter";
+"ComplexSymbolsRequiredInstruction" = "TODO: and (%d) symbol(s)";
+"DontAllowSimpleAlphanumericInstrution" = "TODO:\n - not have repeating/ascending/descending characters";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "TODO:Please Contact Your Administrator";

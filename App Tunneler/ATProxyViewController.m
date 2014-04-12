@@ -84,13 +84,10 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    /*
-    //When view appears, if values are not filled in, try to autofill
-    if([Txt_httpsPort.text isEqualToString:@""]&& [Txt_httpPort.text isEqualToString:@""] && [Txt_httpsPort.text isEqualToString:@""]){
-        [self UpdateProxySettings];
-    }*/
     
-    AWLogError(@"Did Open Proxy Settings");
+    [[AWLog sharedInstance] sendApplicationLogsWithCompletion:^(BOOL success, NSError *error) {
+        
+    }];
     
     if(![[ATSettingsManager sharedInstance] GetSDKStatus]){
         [[[UIAlertView alloc] initWithTitle:@"SDK Not Enabled" message:@"SDK must be enabled under General for proxy to function." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
