@@ -11,6 +11,8 @@
 #import <AWSDK/AWProfile.h>
 #import "ATSettingsManager.h"
 #import "ATLockViewController.h"
+#import "ATCertificateHandler.h"
+#import <AWSDK/AWCommandManager.h>
 
 
 @implementation ATAppDelegate{
@@ -19,13 +21,16 @@
 
 #pragma mark App Delegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [ATCertificateHandler sharedInstance];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
+
     ATBrowserViewController *vc = [[ATBrowserViewController alloc] init];
     
     
@@ -59,6 +64,10 @@
 #pragma mark AWSDK Delegate
 
 -(void)initialCheckDoneWithError:(NSError *)error{
+    
+    [[ATCertificateHandler sharedInstance] checkForCertificate];
+    
+    
     if(!error){
         NSLog(@"Initialization Successful");
     }else{
@@ -68,7 +77,23 @@
 }
 
 -(void)receivedProfiles:(NSArray *)profiles{
-    NSLog(@"%@", [[[profiles lastObject] toDictionary] description]);
+    //NSLog(@"%@", [[[profiles lastObject] toDictionary] description]);
+    
+    for(id prof in profiles){
+        AWProfile *profile = prof;
+        
+        NSLog(@"%@", [[profile toDictionary] description]);
+        
+        
+        if(profile.certificatePayload){
+            NSLog(@"Certificate received");
+            AWCertificatePayload *certPayload = profile.certificatePayload;
+        
+            //[[ATCertificateHandler sharedInstance] SaveCertificateToFile:certPayload.certificateData];
+            
+        }
+    }
+    
 }
 
 -(void)lock{
@@ -93,7 +118,7 @@
 
 -(void)wipe{
     
-}
+} 
 
 -(void)resumeNetworkActivity{
     NSLog(@"Resuming network activity.");

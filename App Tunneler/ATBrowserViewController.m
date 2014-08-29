@@ -11,6 +11,9 @@
 #import "ATGeneralSettingsViewController.h"
 #import "ATSettingsManager.h"
 #import "ATFavoritesViewController.h"
+#import <Security/SecTrust.h>
+#import <AWSDK/AWCommandManager.h>
+#import "ATCertificateHandler.h"
 
 @interface ATBrowserViewController (){
     NSMutableData *webdata;
@@ -123,10 +126,52 @@
     
     NSLog(@"got auth challenge: %@", [challenge.protectionSpace.authenticationMethod description]);
     
+    
     if(challenge.failureResponse){
         NSLog(@"%@", [challenge failureResponse]);
     }
     
+    if(challenge.previousFailureCount==0) {
+        
+        //Client cert challenge received. Handle it.
+        if(challenge.protectionSpace.authenticationMethod==NSURLAuthenticationMethodClientCertificate){
+            
+            //Check if we are using SDK, otherwise we don't have a cert to present.
+            if([[ATSettingsManager sharedInstance] GetSDKStatus]){
+                
+                NSData *certData = [[ATCertificateHandler sharedInstance] readCertificateFromFile];
+                NSString* certPass = [[ATCertificateHandler sharedInstance] GetCertificatePassword];
+                
+                SecIdentityRef identity = [[ATCertificateHandler sharedInstance] certificateInformationFromCertificate:certData password:certPass];
+                
+                SecCertificateRef certificate = NULL;
+                SecIdentityCopyCertificate(identity, &certificate);
+                
+                const void *certs[] = {certificate};
+                CFArrayRef certArray = CFArrayCreate(kCFAllocatorDefault, certs, 1, NULL);
+
+                NSURLCredential *credential = [NSURLCredential credentialWithIdentity:identity certificates:(__bridge NSArray*)certArray persistence:NSURLCredentialPersistencePermanent];
+                [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];
+            
+                return;
+
+            }else{
+                [challenge.sender rejectProtectionSpaceAndContinueWithChallenge:challenge];
+            }
+            
+        }else if(challenge.protectionSpace.authenticationMethod==NSURLAuthenticationMethodServerTrust){
+            
+            //ignore server trust, we'll take whatever for now
+            [challenge.sender useCredential:[NSURLCredential credentialForTrust: challenge.protectionSpace.serverTrust] forAuthenticationChallenge: challenge];
+            return;
+            
+        }
+    }else{
+        [challenge.sender useCredential:[self HandleCredentials:[[[[connection currentRequest] URL] host] description]] forAuthenticationChallenge:challenge];
+        _authed = YES;
+        [challenge.sender cancelAuthenticationChallenge:challenge];
+    }
+
     if ([challenge previousFailureCount] == 0) {
         
         if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]){
@@ -134,16 +179,42 @@
             [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
             _authed = YES;
         }else{
-            [challenge.sender useCredential:[self HandleCredentials:[[[[connection currentRequest] URL] host] description]] forAuthenticationChallenge:challenge];
-            _authed = YES;
+
         }
     }
     else{
         [[[UIAlertView alloc] initWithTitle:@"Auth Failed" message:@"Authentication Failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil] show];
         _authed = NO;
         [Act_Loading setHidden:YES];
+    }*/
+    
+}
+
+
+- (OSStatus)extractIdentity:(CFDataRef)inP12Data :(SecIdentityRef*)identity {
+    OSStatus securityError = errSecSuccess;
+    
+    CFStringRef password = CFSTR("MyCertificatePassword");
+    const void *keys[] = { kSecImportExportPassphrase };
+    const void *values[] = { password };
+    
+    CFDictionaryRef options = CFDictionaryCreate(NULL, keys, values, 1, NULL, NULL);
+    
+    CFArrayRef items = CFArrayCreate(NULL, 0, 0, NULL);
+    securityError = SecPKCS12Import(inP12Data, options, &items);
+    
+    if (securityError == 0) {
+        CFDictionaryRef ident = CFArrayGetValueAtIndex(items,0);
+        const void *tempIdentity = NULL;
+        tempIdentity = CFDictionaryGetValue(ident, kSecImportItemIdentity);
+        *identity = (SecIdentityRef)tempIdentity;
     }
     
+    if (options) {
+        CFRelease(options);
+    }
+    
+    return securityError;
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection{
@@ -159,10 +230,24 @@
     [Act_Loading setHidden:YES];
 }
 
+
 - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
+    
+    if((protectionSpace.authenticationMethod == NSURLAuthenticationMethodClientCertificate)||(protectionSpace.authenticationMethod == NSURLAuthenticationMethodNTLM)||(protectionSpace.authenticationMethod == NSURLAuthenticationMethodDefault)){
+     
+        return YES;
+        
+    }
+    
+    return NO;
+    
+    /*
     NSLog(@"Presenting protect space: %@", [protectionSpace.authenticationMethod description]);
+    
+    return NO;
+    
     BOOL ret = [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust] | [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault]| [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodNTLM];
-    return ret;
+    return ret;*/
 }
 
 -(BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection{
@@ -207,7 +292,8 @@
 }
 
 - (IBAction)Btn_Home:(id)sender {
-    [self Home];
+    [[AWCommandManager sharedManager] loadCommands];
+    //[self Home];
 }
 
 - (IBAction)Btn_Settings:(id)sender {
