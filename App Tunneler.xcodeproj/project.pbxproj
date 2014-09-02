@@ -10,7 +10,7 @@
 		855F1CAB18F88F510074AAFE /* SDKLocalization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 855F1CAA18F88F510074AAFE /* SDKLocalization.bundle */; };
 		855F1CAD18F88FAB0074AAFE /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 855F1CAC18F88FAB0074AAFE /* Settings.bundle */; };
 		855F1CAF18F893710074AAFE /* Activation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 855F1CAE18F893710074AAFE /* Activation.bundle */; };
-		85D1291719AFB9FD00D982C2 /* AWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85D1291619AFB9FD00D982C2 /* AWSDK.framework */; };
+		856E156819B66D7F008B8B6D /* AWSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856E156719B66D7F008B8B6D /* AWSDK.framework */; };
 		85D1291A19AFD39C00D982C2 /* ATCertificateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D1291919AFD39C00D982C2 /* ATCertificateHandler.m */; };
 		A08B8D8D18EDCFB100601FE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8D8C18EDCFB100601FE0 /* Foundation.framework */; };
 		A08B8D8F18EDCFB100601FE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08B8D8E18EDCFB100601FE0 /* CoreGraphics.framework */; };
@@ -71,7 +71,7 @@
 		855F1CAA18F88F510074AAFE /* SDKLocalization.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SDKLocalization.bundle; sourceTree = "<group>"; };
 		855F1CAC18F88FAB0074AAFE /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		855F1CAE18F893710074AAFE /* Activation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Activation.bundle; sourceTree = "<group>"; };
-		85D1291619AFB9FD00D982C2 /* AWSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDK.framework; path = "../../AWSDK Frameworks/SDK 4.1 Proxy/AWSDK.framework"; sourceTree = "<group>"; };
+		856E156719B66D7F008B8B6D /* AWSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSDK.framework; path = "../../AWSDK Frameworks/SDK 4.1 Proxy/AWSDK.framework"; sourceTree = "<group>"; };
 		85D1291819AFD39C00D982C2 /* ATCertificateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCertificateHandler.h; sourceTree = "<group>"; };
 		85D1291919AFD39C00D982C2 /* ATCertificateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATCertificateHandler.m; sourceTree = "<group>"; };
 		A08B8D8918EDCFB100601FE0 /* Tunneler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tunneler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D1291719AFB9FD00D982C2 /* AWSDK.framework in Frameworks */,
+				856E156819B66D7F008B8B6D /* AWSDK.framework in Frameworks */,
 				A08B8DE218EDD89900601FE0 /* libstdc++.6.0.9.dylib in Frameworks */,
 				A08B8D9118EDCFB100601FE0 /* UIKit.framework in Frameworks */,
 				A08B8DDE18EDD4AA00601FE0 /* SystemConfiguration.framework in Frameworks */,
@@ -190,7 +190,7 @@
 		A08B8D8B18EDCFB100601FE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				85D1291619AFB9FD00D982C2 /* AWSDK.framework */,
+				856E156719B66D7F008B8B6D /* AWSDK.framework */,
 				855F1CAE18F893710074AAFE /* Activation.bundle */,
 				855F1CAC18F88FAB0074AAFE /* Settings.bundle */,
 				855F1CAA18F88F510074AAFE /* SDKLocalization.bundle */,
@@ -596,6 +596,14 @@
 					Frameworks/SDK,
 					4.1,
 					Proxy,
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.1,
+					Proxy,
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.1,
+					Proxy,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App Tunneler/App Tunneler-Prefix.pch";
@@ -624,6 +632,14 @@
 					Frameworks/SDK,
 					4.0,
 					Partners,
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.1,
+					Proxy,
+					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
+					Frameworks/SDK,
+					4.1,
+					Proxy,
 					/Users/lchen/Desktop/AirWatch/Development/iOS/AWSDK,
 					Frameworks/SDK,
 					4.1,

@@ -40,6 +40,7 @@
     AWProfile *profile = certNotification.object;
     
     if(profile.certificatePayload){
+        [[[UIAlertView alloc] initWithTitle:@"Certificate Received" message:@"Cert Received" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
         NSLog(@"Certificate received");
         AWCertificatePayload *certPayload = profile.certificatePayload;
         

@@ -142,18 +142,23 @@
                 NSData *certData = [[ATCertificateHandler sharedInstance] readCertificateFromFile];
                 NSString* certPass = [[ATCertificateHandler sharedInstance] GetCertificatePassword];
                 
-                SecIdentityRef identity = [[ATCertificateHandler sharedInstance] certificateInformationFromCertificate:certData password:certPass];
                 
-                SecCertificateRef certificate = NULL;
-                SecIdentityCopyCertificate(identity, &certificate);
-                
-                const void *certs[] = {certificate};
-                CFArrayRef certArray = CFArrayCreate(kCFAllocatorDefault, certs, 1, NULL);
-
-                NSURLCredential *credential = [NSURLCredential credentialWithIdentity:identity certificates:(__bridge NSArray*)certArray persistence:NSURLCredentialPersistencePermanent];
-                [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];
-            
-                return;
+                if(certData){ //Make sure cert data is actually otherwise we'll crash!
+                    SecIdentityRef identity = [[ATCertificateHandler sharedInstance] certificateInformationFromCertificate:certData password:certPass];
+                    
+                    SecCertificateRef certificate = NULL;
+                    SecIdentityCopyCertificate(identity, &certificate);
+                    
+                    const void *certs[] = {certificate};
+                    CFArrayRef certArray = CFArrayCreate(kCFAllocatorDefault, certs, 1, NULL);
+                    
+                    NSURLCredential *credential = [NSURLCredential credentialWithIdentity:identity certificates:(__bridge NSArray*)certArray persistence:NSURLCredentialPersistenceNone];
+                    [challenge.sender useCredential:credential forAuthenticationChallenge:challenge];
+                    
+                    return;
+                }else{ //No certificate available
+                    [challenge.sender continueWithoutCredentialForAuthenticationChallenge:challenge];
+                }
 
             }else{
                 [challenge.sender rejectProtectionSpaceAndContinueWithChallenge:challenge];
@@ -165,6 +170,8 @@
             [challenge.sender useCredential:[NSURLCredential credentialForTrust: challenge.protectionSpace.serverTrust] forAuthenticationChallenge: challenge];
             return;
             
+        }else{
+            [challenge.sender useCredential:[self HandleCredentials:[[[[connection currentRequest] URL] host] description]] forAuthenticationChallenge:challenge];
         }
     }else{
         [challenge.sender useCredential:[self HandleCredentials:[[[[connection currentRequest] URL] host] description]] forAuthenticationChallenge:challenge];
@@ -186,7 +193,7 @@
         [[[UIAlertView alloc] initWithTitle:@"Auth Failed" message:@"Authentication Failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:Nil, nil] show];
         _authed = NO;
         [Act_Loading setHidden:YES];
-    }*/
+    }
     
 }
 
@@ -233,21 +240,11 @@
 
 - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace {
     
-    if((protectionSpace.authenticationMethod == NSURLAuthenticationMethodClientCertificate)||(protectionSpace.authenticationMethod == NSURLAuthenticationMethodNTLM)||(protectionSpace.authenticationMethod == NSURLAuthenticationMethodDefault)){
-     
+    if(protectionSpace.authenticationMethod == NSURLAuthenticationMethodDefault || protectionSpace.authenticationMethod == NSURLAuthenticationMethodClientCertificate){
         return YES;
-        
     }
-    
-    return NO;
-    
-    /*
-    NSLog(@"Presenting protect space: %@", [protectionSpace.authenticationMethod description]);
-    
-    return NO;
-    
-    BOOL ret = [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust] | [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodDefault]| [protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodNTLM];
-    return ret;*/
+
+    return YES;
 }
 
 -(BOOL)connectionShouldUseCredentialStorage:(NSURLConnection *)connection{
@@ -293,7 +290,7 @@
 
 - (IBAction)Btn_Home:(id)sender {
     [[AWCommandManager sharedManager] loadCommands];
-    //[self Home];
+    [self Home];
 }
 
 - (IBAction)Btn_Settings:(id)sender {
@@ -500,7 +497,7 @@
     NSString *username = [[alert textFieldAtIndex:0] text];
     NSString *password = [[alert textFieldAtIndex:1] text];
     
-    return [NSURLCredential credentialWithUser:username password:password persistence:NSURLCredentialPersistenceForSession];
+    return [NSURLCredential credentialWithUser:username password:password persistence:NSURLCredentialPersistenceNone];
 }
 
 //Called when request times out
