@@ -27,6 +27,7 @@
         [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"Google" URL:@"https://www.google.com"]];
         [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"AirWatch" URL:@"https://www.air-watch.com"]];
         [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"Sharepoint" URL:@"sharepoint"]];
+        [favorites addObject:[[ATFavoritesModel alloc] initWithName:@"Demo2 Cert" URL:@"https://demo2.awmdm.com/certtest"]];
     }
     return self;
 }
